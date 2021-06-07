@@ -29,7 +29,7 @@ import it.moondroid.coverflowdemo.R;
 
 
 public class MainActivity extends Activity implements
-        View.OnClickListener,SensorControl.LedListener,SensorControl.MotorListener,SensorControl.TempHumListener,SensorControl.LightSensorListener{
+        View.OnClickListener,SensorControl.LedListener,SensorControl.PESensorListener,SensorControl.MotorListener,SensorControl.TempHumListener,SensorControl.LightSensorListener{
 
     private static final String TAG = "MainActivity";
     private static final int REQ_SYSTEM_SETTINGS = 1;
@@ -156,6 +156,7 @@ public class MainActivity extends Activity implements
                     }
                     break;
                 case 0x03:
+                    System.out.println("Here is 0x03: "+data.getByte("sensor_status"));
                     switch (data.getByte("senser_id") ) {
                         case 0x01:
                             Temp = data.getInt("senser_data");
@@ -200,6 +201,19 @@ public class MainActivity extends Activity implements
                             mSensorControl.allLeds_On(true);
                     }
                     break;
+                case 0x05:
+                    System.out.println("Sensor: "+data.getByte("sensor_status"));
+                    if(data.getByte("sensor_status") == 0x00) {
+                        System.out.println(data.getByte("sensor_status"));
+                        if(!isLed1On){
+                            mSensorControl.led1_On(true);
+                        }
+                    }else{
+                        if(isLed1On){
+                            mSensorControl.led1_Off(true);
+                        }
+                    }
+                    break;
                 default:
                     break;
             }
@@ -225,6 +239,10 @@ public class MainActivity extends Activity implements
                     break;
                 case 3:
                     mSensorControl.checkBrightness(true);
+                    i++;
+                    break;
+                case 4:
+                    mSensorControl.checkPE(true);
                     i = 1;
                     break;
                 default:
@@ -302,6 +320,7 @@ public class MainActivity extends Activity implements
         mSensorControl.addLedListener(this);
         mSensorControl.addMotorListener(this);
         mSensorControl.addTempHumListener(this);
+        mSensorControl.addPESensorListener(this);
         mSensorControl.addLightSensorListener(this);
     }
 
@@ -505,6 +524,7 @@ public class MainActivity extends Activity implements
         super.onDestroy();
 
         mSensorControl.removeLedListener(this);
+        mSensorControl.removePESensorListener(this);
         mSensorControl.removeMotorListener(this);
         mSensorControl.removeTempHumListener(this);
         mSensorControl.removeLightSensorListener(this);
@@ -547,6 +567,16 @@ public class MainActivity extends Activity implements
     }
 
     @Override
+    public void peSensorReceive(byte sensor_status){
+        Message msg = new Message();
+        msg.what = 0x05;
+        System.out.println("peReceived");
+        Bundle data = new Bundle();
+        data.putByte("sensor_status", sensor_status);
+        msg.setData(data);
+        myHandler.sendMessage(msg);
+    }
+
     public void lightSensorReceive(byte senser_status) {
 
         Message msg = new Message();
