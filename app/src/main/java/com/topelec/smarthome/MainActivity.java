@@ -193,12 +193,16 @@ public class MainActivity extends Activity implements
                 case 0x04:
                     if (data.getByte("senser_status") == 0x01) {
                         brightnessView.setImageDrawable(getResources().getDrawable((R.drawable.smarthome_bright)));
-                        if (isAutoBrightness)
-                            mSensorControl.allLeds_Off(true);
+                        if (!fanStatus) {
+                            mSensorControl.fanForward(true);
+                        };
+                            //mSensorControl.allLeds_Off(true);
                     } else {
                         brightnessView.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_dark));
-                        if (isAutoBrightness)
-                            mSensorControl.allLeds_On(true);
+                        if (fanStatus) {
+                            mSensorControl.fanStop(true);
+                        }
+                            //mSensorControl.allLeds_On(true);
                     }
                     break;
                 case 0x05:
