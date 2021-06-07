@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    }
+]
