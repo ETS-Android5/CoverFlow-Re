@@ -193,16 +193,16 @@ public class MainActivity extends Activity implements
                 case 0x04:
                     if (data.getByte("senser_status") == 0x01) {
                         brightnessView.setImageDrawable(getResources().getDrawable((R.drawable.smarthome_bright)));
-                        if (!fanStatus) {
-                            mSensorControl.fanForward(true);
-                        };
-                            //mSensorControl.allLeds_Off(true);
+//                        if (!fanStatus) {
+//                            mSensorControl.fanForward(true);
+//                        };
+                            mSensorControl.allLeds_Off(true);
                     } else {
                         brightnessView.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_dark));
-                        if (fanStatus) {
-                            mSensorControl.fanStop(true);
-                        }
-                            //mSensorControl.allLeds_On(true);
+//                        if (fanStatus) {
+//                            mSensorControl.fanStop(true);
+//                        }
+                            mSensorControl.allLeds_On(true);
                     }
                     break;
                 case 0x05:
@@ -235,22 +235,22 @@ public class MainActivity extends Activity implements
         public void run() {
             //TODO:查询温度湿度
             switch (i) {
+//                case 1:
+//                    mSensorControl.checkTemperature(true);
+//                    i++;
+//                    break;
+//                case 2:
+//                    mSensorControl.checkHumidity(true);
+//                    i++;
+//                    break;
                 case 1:
-                    mSensorControl.checkTemperature(true);
-                    i++;
-                    break;
-                case 2:
-                    mSensorControl.checkHumidity(true);
-                    i++;
-                    break;
-                case 3:
                     mSensorControl.checkBrightness(true);
-                    i++;
+//                    i++;
                     break;
-                case 4:
-                    mSensorControl.checkPE(true);
-                    i = 1;
-                    break;
+//                case 2:
+//                    mSensorControl.checkPE(true);
+//                    i = 1;
+//                    break;
                 default:
                     break;
             }
