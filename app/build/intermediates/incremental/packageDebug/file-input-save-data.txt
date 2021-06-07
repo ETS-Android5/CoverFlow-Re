@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jun 07 19:32:34 CST 2021
+#Mon Jun 07 19:40:04 CST 2021
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=D\:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\abc_fade_out.xml

@@ -205,12 +205,14 @@ public class MainActivity extends Activity implements
                     System.out.println("Sensor: "+data.getByte("sensor_status"));
                     if(data.getByte("sensor_status") == 0x00) {
                         System.out.println(data.getByte("sensor_status"));
-                        if(!isLed1On){
-                            mSensorControl.led1_On(true);
-                        }
-                    }else{
-                        if(isLed1On){
-                            mSensorControl.led1_Off(true);
+
+                        if (!fanStatus) {
+                            mSensorControl.fanForward(true);
+                        };
+                    } else {
+                        //TODO 实时温度小于设定值，停止降低温度，如果此时风扇是运行状态，则执行停止风扇动作。
+                        if (fanStatus) {
+                            mSensorControl.fanStop(true);
                         }
                     }
                     break;
