@@ -148,6 +148,30 @@ public class MainActivity extends Activity implements
         throw RuntimeException("Not Implemented");
     }
 
+    // 传感器信号接收器
+
+    public void onRFID() {
+        if(status.equals("empty")) {
+            stateTransferToEntering();
+        }
+    }
+
+    public void onGuangDian() {
+        if (status.equals("entering")) {
+            stateTransferToEntered();
+        }
+
+        if (status.equals("showered")) {
+            stateTransferToLeaved();
+        }
+    }
+
+    public void onWaitEnd() {
+        if (status.equals("entered")) {
+            stateTransferToShowering();
+        }
+    }
+
 
     /**
      * 用于更新UI
