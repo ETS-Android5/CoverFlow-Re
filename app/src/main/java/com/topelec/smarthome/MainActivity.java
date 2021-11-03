@@ -100,6 +100,11 @@ public class MainActivity extends Activity implements
 
         closeDoorOne();
         startShowering();
+
+        StartNewThread(()->{
+            Thread.sleep(10 seconds);
+            sendOnWaitEndMessage();
+        })
     }
 
     public void stateTransferToShowered() {
@@ -172,6 +177,24 @@ public class MainActivity extends Activity implements
         }
     }
 
+    public void sendOnRFIDMessage() {
+        Message msg = new Message();
+        msg.what = 0x21;
+        myHandler.sendMessage(msg);
+    }
+
+    public void sendOnGuangdianMessage() {
+        Message msg = new Message();
+        msg.what = 0x22;
+        myHandler.sendMessage(msg);
+    }
+
+    public sendOnWaitEndMessage() {
+        Message msg = new Message();
+        msg.what = 0x23;
+        myHandler.sendMessage(msg);
+    }
+
 
     /**
      * 用于更新UI
@@ -183,6 +206,18 @@ public class MainActivity extends Activity implements
             data = msg.getData();
             switch (msg.what) {
                 //判断发送的消息
+                case 0x21:{
+                    onRFID();
+                    break;
+                }
+                case 0x22:{
+                    onGuangDian();
+                    break;
+                }
+                case 0x23:{
+                    onWaitEnd();
+                    break;
+                }
                 case 0x01:
                     switch (data.getByte("led_id")) {
                         case 0x01:
