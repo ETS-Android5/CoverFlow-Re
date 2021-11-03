@@ -71,6 +71,60 @@ public class MainActivity extends Activity implements
     private static final int HUMIDITY_SENSOR = 32;
     private static final int BRIGHTNESS_SENSOR = 40;
 
+    public String state = "empty"; // empty, 
+
+    public void stateTransferToEmpty() {
+        if(state.notEquals("leaved")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+
+        state = "empty";
+    }
+
+    public void stateTrasferToEntering() {
+        if(state.notEquals("empty")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+
+        state = "entering";
+
+        openDoorOne();
+    }
+
+    public void stateTransferToEntered() {
+        if(state.notEquals("entering")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+
+        state = "entered";
+
+        closeDoorOne();
+        startShowering();
+    }
+
+    public void stateTransferToShowered() {
+        if(state.notEquals("entered")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+
+        state = "showered";
+
+        stopShowering();
+        openDoorTwo();
+    }
+
+    public void stateTransferToLeaved() {
+        if(state.notEquals("showered")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+        state = "leaved";
+
+        closeDoorTwo();
+
+        stateTransferToEmpty();
+    }
+
+
     /**
      * 用于更新UI
      */
