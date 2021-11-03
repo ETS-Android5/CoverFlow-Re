@@ -124,6 +124,30 @@ public class MainActivity extends Activity implements
         stateTransferToEmpty();
     }
 
+    public void openDoorOne(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void closeDoorOne(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void openDoorTwo(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void closeDoorTwo(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void startShowering(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void stopShowering(){
+        throw RuntimeException("Not Implemented");
+    }
+
 
     /**
      * 用于更新UI
