@@ -146,11 +146,11 @@ public class MainActivity extends Activity implements
     }
 
     public void startShowering(){
-        throw RuntimeException("Not Implemented");
+        mSensorControl.fanForward(true);
     }
 
     public void stopShowering(){
-        throw RuntimeException("Not Implemented");
+        mSensorControl.fanStop(true);
     }
 
     // 传感器信号接收器
@@ -711,13 +711,7 @@ public class MainActivity extends Activity implements
 
     @Override
     public void peSensorReceive(byte sensor_status){
-        Message msg = new Message();
-        msg.what = 0x05;
-        System.out.println("peReceived");
-        Bundle data = new Bundle();
-        data.putByte("sensor_status", sensor_status);
-        msg.setData(data);
-        myHandler.sendMessage(msg);
+        sendOnGuangdianMessage();
     }
 
     public void lightSensorReceive(byte senser_status) {
