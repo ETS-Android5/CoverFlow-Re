@@ -1,7 +1,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="com.topelec.smarthome.MainActivity"
-    android:background="@drawable/smarthome_background">
+    android:background="@drawable/buscard_consume_background">
 
     <FrameLayout
         android:id="@+id/smarthome_content"
@@ -149,5 +150,62 @@
                 android:textStyle="bold"/>
 
         </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/buscard_consume_background">
+
+        <ImageView
+            android:id="@+id/nozzle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="450dp"
+            android:src="@drawable/nozzle_closed" />
+
+        <ImageView
+            android:id="@+id/rfid_state_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="782dp"
+            android:layout_marginTop="223dp"
+            android:layout_marginBottom="267dp"
+            android:src="@drawable/access_waiting" />
+
+        <ImageView
+            android:id="@+id/doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="168dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="841dp"
+            android:src="@drawable/doctor" />
+
+        <ImageButton
+            android:id="@+id/switch_to_recharge"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="111dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginBottom="298dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/computer_button" />
+
+        <ImageView
+            android:id="@+id/door1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:src="@drawable/door_closed" />
+
+        <ImageView
+            android:id="@+id/door2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="680dp"
+            android:src="@drawable/door_closed" />
     </FrameLayout>
 </FrameLayout>

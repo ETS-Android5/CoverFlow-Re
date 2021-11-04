@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\d1da25c864abb41df8689043019c21b6ec4e15b1\\output\\res\\layout\\design_navigation_item.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\layout\\abc_search_view.xml"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_snackbar_include.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\d1da25c864abb41df8689043019c21b6ec4e15b1\\output\\res\\layout\\layout_snackbar_include.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
@@ -130,6 +130,10 @@
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab_icon.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\d1da25c864abb41df8689043019c21b6ec4e15b1\\output\\res\\layout\\layout_tab_icon.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smartkiller_recharge.xml",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\layout\\activity_smartkiller_recharge.xml"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",

@@ -24,11 +24,12 @@
          <intent-filter>
          <action android:name="com.topelec.smarthome.ACTION_SMARTHOME" />
 
-
          <category android:name="android.intent.category.DEFAULT" />
          </intent-filter>
          </activity>
+         <activity android:name="com.topelec.smarthome.RechargeActivity" />
          <activity android:name="com.topelec.smarthome.Settings" />
+
          <activity android:name="com.topelec.smartagriculture.MainActivity">
          <intent-filter>
          <action android:name="com.topelec.smartagriculture.ACTION_AGRICULTURE" />

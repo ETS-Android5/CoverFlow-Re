@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.topelec.smarthome.RechargeActivity"
+    android:background="@drawable/recharge_new_background">
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/resume_statusView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="90dp"-->
+<!--        android:layout_marginTop="120dp"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/buscard_recharge_standby" />-->
+    <ImageView
+        android:id="@+id/recharge_label_textholder"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="490dp"
+        android:background="@drawable/recharge_label_textholder" />
+
+    <TextView
+        android:id="@+id/idView"
+        android:layout_width="305dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="490dp"
+        android:hint="此处显示卡号"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btn_author"
+        android:layout_width="305dp"
+        android:layout_height="167dp"
+        android:layout_marginLeft="152dp"
+
+        android:layout_marginTop="252dp"
+        android:background="@drawable/recharge_green_button" />
+
+    <ImageButton
+        android:id="@+id/btn_cancel_author"
+        android:layout_width="305dp"
+        android:layout_height="167dp"
+        android:layout_marginLeft="570dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/recharge_red_button" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="840dp"
+        android:layout_marginTop="482dp"
+        android:background="#356a76"
+        android:text="返回"
+        android:textColor="#FFFFFF" />
+
+</FrameLayout>
