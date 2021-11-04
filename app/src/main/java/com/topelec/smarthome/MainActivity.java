@@ -12,6 +12,7 @@ import android.os.Message;
 import android.preference.PreferenceManager;
 
 import android.os.Bundle;
+import android.util.ArrayMap;
 import android.util.Log;
 
 import android.view.MotionEvent;
@@ -22,8 +23,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.topelec.rfidcontrol.ModulesControl;
 import com.topelec.zigbeecontrol.Command;
 import com.topelec.zigbeecontrol.SensorControl;
+
+import java.util.ArrayList;
 
 import it.moondroid.coverflowdemo.R;
 
@@ -66,24 +70,26 @@ public class MainActivity extends Activity implements
 
 
     SensorControl mSensorControl;
+    ModulesControl mModulesControl;
 
     private static final int TEMPERATURE_SENSOR = 31;
     private static final int HUMIDITY_SENSOR = 32;
     private static final int BRIGHTNESS_SENSOR = 40;
 
-    public String state = "empty"; // empty, 
+    public String state = "empty"; // empty,
+    public ArrayMap idmap = new ArrayMap<>();
 
     public void stateTransferToEmpty() {
-        if(state.notEquals("leaved")){
-            throw RuntimeException("IllegalStateTransfer");
+        if(!state.equals("leaved")){
+            throw new IllegalStateException("IllegalStateTransfer");
         }
 
         state = "empty";
     }
 
-    public void stateTrasferToEntering() {
-        if(state.notEquals("empty")){
-            throw RuntimeException("IllegalStateTransfer");
+    public void stateTransferToEntering() {
+        if(!state.equals("empty")){
+            throw new IllegalStateException("IllegalStateTransfer");
         }
 
         state = "entering";
@@ -92,8 +98,8 @@ public class MainActivity extends Activity implements
     }
 
     public void stateTransferToEntered() {
-        if(state.notEquals("entering")){
-            throw RuntimeException("IllegalStateTransfer");
+        if(!state.equals("entering")){
+            throw new IllegalStateException("IllegalStateTransfer");
         }
 
         state = "entered";
@@ -101,15 +107,23 @@ public class MainActivity extends Activity implements
         closeDoorOne();
         startShowering();
 
-        StartNewThread(()->{
-            Thread.sleep(10 seconds);
-            sendOnWaitEndMessage();
-        })
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000*5);
+                    sendOnWaitEndMessage();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
     }
 
     public void stateTransferToShowered() {
-        if(state.notEquals("entered")){
-            throw RuntimeException("IllegalStateTransfer");
+        if(!state.equals("entered")){
+            throw new IllegalStateException("IllegalStateTransfer");
         }
 
         state = "showered";
@@ -119,8 +133,8 @@ public class MainActivity extends Activity implements
     }
 
     public void stateTransferToLeaved() {
-        if(state.notEquals("showered")){
-            throw RuntimeException("IllegalStateTransfer");
+        if(!state.equals("showered")){
+            throw new IllegalStateException("IllegalStateTransfer");
         }
         state = "leaved";
 
@@ -130,19 +144,20 @@ public class MainActivity extends Activity implements
     }
 
     public void openDoorOne(){
-        throw RuntimeException("Not Implemented");
+
+        throw new RuntimeException("Not Implemented");
     }
 
     public void closeDoorOne(){
-        throw RuntimeException("Not Implemented");
+        throw new RuntimeException("Not Implemented");
     }
 
     public void openDoorTwo(){
-        throw RuntimeException("Not Implemented");
+        throw new RuntimeException("Not Implemented");
     }
 
     public void closeDoorTwo(){
-        throw RuntimeException("Not Implemented");
+        throw new RuntimeException("Not Implemented");
     }
 
     public void startShowering(){
@@ -155,25 +170,36 @@ public class MainActivity extends Activity implements
 
     // 传感器信号接收器
 
-    public void onRFID() {
-        if(status.equals("empty")) {
-            stateTransferToEntering();
+    public void onRFID(Bundle data) {
+        if(idmap.containsKey(data.getString("cardNo"))){
+            if(state.equals("empty")) {
+                stateTransferToEntering();
+            }
+            else{
+                throw new IllegalStateException("IllegalStateTransfer");
+            }
         }
+        else{
+            System.out.println("卡还妹开捏");
+            throw new RuntimeException("卡还妹开捏");
+        }
+
+
     }
 
     public void onGuangDian() {
-        if (status.equals("entering")) {
+        if (state.equals("entering")) {
             stateTransferToEntered();
         }
 
-        if (status.equals("showered")) {
+        if (state.equals("showered")) {
             stateTransferToLeaved();
         }
     }
 
     public void onWaitEnd() {
-        if (status.equals("entered")) {
-            stateTransferToShowering();
+        if (state.equals("entered")) {
+            stateTransferToShowered();
         }
     }
 
@@ -189,7 +215,7 @@ public class MainActivity extends Activity implements
         myHandler.sendMessage(msg);
     }
 
-    public sendOnWaitEndMessage() {
+    public void sendOnWaitEndMessage() {
         Message msg = new Message();
         msg.what = 0x23;
         myHandler.sendMessage(msg);
@@ -199,6 +225,8 @@ public class MainActivity extends Activity implements
     /**
      * 用于更新UI
      */
+
+
     Handler myHandler = new Handler() {
         //2.重写消息处理函数
         public void handleMessage(Message msg) {
@@ -206,10 +234,12 @@ public class MainActivity extends Activity implements
             data = msg.getData();
             switch (msg.what) {
                 //判断发送的消息
-                case 0x21:{
-                    onRFID();
+                case Command.HF_ID:      //防冲突（获取卡号）返回结果
+
+                    onRFID(data);
+//                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
+
                     break;
-                }
                 case 0x22:{
                     onGuangDian();
                     break;
@@ -218,145 +248,72 @@ public class MainActivity extends Activity implements
                     onWaitEnd();
                     break;
                 }
-                case 0x01:
-                    switch (data.getByte("led_id")) {
-                        case 0x01:
-                            if (data.getByte("led_status") == 0x01) {
-                                btnLed1.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_on));
-                                isLed1On = true;
-                            }else {
-                                btnLed1.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_off));
-                                isLed1On = false;
-                            }
-                            break;
-                        case 0x02:
-                            if (data.getByte("led_status") == 0x01) {
-                                btnLed2.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_on));
-                                isLed2On = true;
-                            }else {
-                                btnLed2.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_off));
-                                isLed2On = false;
-                            }
-                            break;
-                        case 0x03:
-                            if (data.getByte("led_status") == 0x01) {
-                                btnLed3.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_on));
-                                isLed3On = true;
-                            } else {
-                                btnLed3.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_off));
-                                isLed3On = false;
-                            }
-                            break;
-                        case 0x04:
-                            if (data.getByte("led_status") == 0x01) {
-                                btnLed4.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_on));
-                                isLed4On = true;
-                            }else {
-                                btnLed4.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_off));
-                                isLed4On = false;
-                            }
-                            break;
-                        case 0x05:
-                            if (data.getByte("led_status") == 0x01) {
-                                btnLed1.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_on));
-                                btnLed2.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_on));
-                                btnLed3.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_on));
-                                btnLed4.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_on));
-                                isLed1On = true;
-                                isLed2On = true;
-                                isLed3On = true;
-                                isLed4On = true;
-                            } else {
-                                btnLed1.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_off));
-                                btnLed2.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_off));
-                                btnLed3.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_off));
-                                btnLed4.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_led_off));
-                                isLed1On = false;
-                                isLed2On = false;
-                                isLed3On = false;
-                                isLed4On = false;
-                            }
-                            break;
-                        default:
-                            break;
-                    }
-                    break;
-                case 0x02:
-                    if (data.getByte("motor_status") == 0x01) {
-                        fanView.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_motor_start));
-                        btnStart.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_btn_motor_on));
-                        fanStatus = true;
-                    }else {
-                        fanView.setImageDrawable(null);
-                        btnStart.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_btn_motor_off));
-                        fanStatus = false;
-                    }
-                    break;
-                case 0x03:
-                    System.out.println("Here is 0x03: "+data.getByte("sensor_status"));
-                    switch (data.getByte("senser_id") ) {
-                        case 0x01:
-                            Temp = data.getInt("senser_data");
-                            tempView.setText(String.valueOf(Temp));
-                            //如下温度自动化管理代码
-                            if (isAutoTempHum) {
-                                if (Hum > 60) {
-                                    if(!isLed1On){
-                                        mSensorControl.led1_On(true);
-                                    }
-                                    //TODO 温度大于设定值，降低温度，执行打开风扇动作
-                                    //if (!fanStatus) {
-                                    //    mSensorControl.fanForward(true);
-                                    //};
-                                } else {
-                                    if(isLed1On){
-                                        mSensorControl.led1_Off(true);
-                                    }
-                                    //TODO 实时温度小于设定值，停止降低温度，如果此时风扇是运行状态，则执行停止风扇动作。
-                                    //if (fanStatus) {
-                                    //    mSensorControl.fanStop(true);
-                                    //}
-                                }
-                            }
-                            break;
-                        case 0x02:
-                            Hum = data.getInt("senser_data");
-                            humView.setText(String.valueOf(Hum));
-                            break;
-                        default:
-                            break;
-                    }
-                    break;
-                case 0x04:
-                    if (data.getByte("senser_status") == 0x01) {
-                        brightnessView.setImageDrawable(getResources().getDrawable((R.drawable.smarthome_bright)));
+
+//                case 0x03:
+//                    System.out.println("Here is 0x03: "+data.getByte("sensor_status"));
+//                    switch (data.getByte("senser_id") ) {
+//                        case 0x01:
+//                            Temp = data.getInt("senser_data");
+//                            tempView.setText(String.valueOf(Temp));
+//                            //如下温度自动化管理代码
+//                            if (isAutoTempHum) {
+//                                if (Hum > 60) {
+//                                    if(!isLed1On){
+//                                        mSensorControl.led1_On(true);
+//                                    }
+//                                    //TODO 温度大于设定值，降低温度，执行打开风扇动作
+//                                    //if (!fanStatus) {
+//                                    //    mSensorControl.fanForward(true);
+//                                    //};
+//                                } else {
+//                                    if(isLed1On){
+//                                        mSensorControl.led1_Off(true);
+//                                    }
+//                                    //TODO 实时温度小于设定值，停止降低温度，如果此时风扇是运行状态，则执行停止风扇动作。
+//                                    //if (fanStatus) {
+//                                    //    mSensorControl.fanStop(true);
+//                                    //}
+//                                }
+//                            }
+//                            break;
+//                        case 0x02:
+//                            Hum = data.getInt("senser_data");
+//                            humView.setText(String.valueOf(Hum));
+//                            break;
+//                        default:
+//                            break;
+//                    }
+//                    break;
+//                case 0x04:
+//                    if (data.getByte("senser_status") == 0x01) {
+//                        brightnessView.setImageDrawable(getResources().getDrawable((R.drawable.smarthome_bright)));
+////                        if (!fanStatus) {
+////                            mSensorControl.fanForward(true);
+////                        };
+//                            mSensorControl.allLeds_Off(true);
+//                    } else {
+//                        brightnessView.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_dark));
+////                        if (fanStatus) {
+////                            mSensorControl.fanStop(true);
+////                        }
+//                            mSensorControl.allLeds_On(true);
+//                    }
+//                    break;
+//                case 0x05:
+//                    System.out.println("Sensor: "+data.getByte("sensor_status"));
+//                    if(data.getByte("sensor_status") == 0x00) {
+//                        System.out.println(data.getByte("sensor_status"));
+//
 //                        if (!fanStatus) {
 //                            mSensorControl.fanForward(true);
 //                        };
-                            mSensorControl.allLeds_Off(true);
-                    } else {
-                        brightnessView.setImageDrawable(getResources().getDrawable(R.drawable.smarthome_dark));
+//                    } else {
+//                        //TODO 实时温度小于设定值，停止降低温度，如果此时风扇是运行状态，则执行停止风扇动作。
 //                        if (fanStatus) {
 //                            mSensorControl.fanStop(true);
 //                        }
-                            mSensorControl.allLeds_On(true);
-                    }
-                    break;
-                case 0x05:
-                    System.out.println("Sensor: "+data.getByte("sensor_status"));
-                    if(data.getByte("sensor_status") == 0x00) {
-                        System.out.println(data.getByte("sensor_status"));
-
-                        if (!fanStatus) {
-                            mSensorControl.fanForward(true);
-                        };
-                    } else {
-                        //TODO 实时温度小于设定值，停止降低温度，如果此时风扇是运行状态，则执行停止风扇动作。
-                        if (fanStatus) {
-                            mSensorControl.fanStop(true);
-                        }
-                    }
-                    break;
+//                    }
+//                    break;
                 default:
                     break;
             }
@@ -448,6 +405,8 @@ public class MainActivity extends Activity implements
         mVisible = true;
         mControlsView = findViewById(R.id.smarthome_settings);
         mContentView = findViewById(R.id.smarthome_content);
+        mModulesControl = new ModulesControl(myHandler);
+        mModulesControl.actionControl(true);
         mBackView = findViewById(R.id.smarthome_back);
 
 
@@ -672,6 +631,8 @@ public class MainActivity extends Activity implements
         mSensorControl.removeTempHumListener(this);
         mSensorControl.removeLightSensorListener(this);
         mSensorControl.closeSerialDevice();
+        mModulesControl.actionControl(false);
+        mModulesControl.closeSerialDevice();
     }
 
     @Override
