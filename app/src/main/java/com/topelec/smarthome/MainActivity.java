@@ -180,7 +180,7 @@ public class MainActivity extends Activity implements
         }
         else{
             System.out.println("卡还妹开捏");
-            throw new RuntimeException("卡还妹开捏");
+
         }
 
 
@@ -225,7 +225,34 @@ public class MainActivity extends Activity implements
      * 用于更新UI
      */
 
+    Handler rfhander = new Handler(){
+        public void handleMessage(Message msg){
+            Bundle data;
+            data = msg.getData();
+            switch (msg.what) {
+                //判断发送的消息
+                case Command.HF_TYPE:  //设置卡片类型TypeA返回结果  ,错误类型:1
 
+                    break;
+                case  Command.HF_FREQ:  //射频控制（打开或者关闭）返回结果   ,错误类型:1
+
+
+                    break;
+                case Command.HF_ACTIVE:       //激活卡片，寻卡，返回结果
+
+
+                    break;
+                case Command.HF_ID:      //防冲突（获取卡号）返回结果
+
+                    onRFID(data);
+//                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
+
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
     Handler myHandler = new Handler() {
         //2.重写消息处理函数
         public void handleMessage(Message msg) {
@@ -233,12 +260,12 @@ public class MainActivity extends Activity implements
             data = msg.getData();
             switch (msg.what) {
                 //判断发送的消息
-                case Command.HF_ID:      //防冲突（获取卡号）返回结果
-
-                    onRFID(data);
-//                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
-
-                    break;
+//                case Command.HF_ID:      //防冲突（获取卡号）返回结果
+//
+//                    onRFID(data);
+////                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
+//
+//                    break;
                 case 0x22:{
                     onGuangDian();
                     break;
@@ -404,7 +431,7 @@ public class MainActivity extends Activity implements
         mVisible = true;
         mControlsView = findViewById(R.id.smarthome_settings);
         mContentView = findViewById(R.id.smarthome_content);
-        mModulesControl = new ModulesControl(myHandler);
+        mModulesControl = new ModulesControl(rfhander);
         mModulesControl.actionControl(true);
         mBackView = findViewById(R.id.smarthome_back);
 
@@ -590,6 +617,9 @@ public class MainActivity extends Activity implements
 
         }
 
+        else if(requestCode == REQ_RECAHRGE_INFO){
+
+        }
     }
 
     /**

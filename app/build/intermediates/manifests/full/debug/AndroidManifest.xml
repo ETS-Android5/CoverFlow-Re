@@ -17,8 +17,11 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar" >
         <activity
-            android:name="it.moondroid.coverflowdemo.CoverFlowActivity"
-            android:label="@string/app_name" >
+            android:name="com.topelec.smarthome.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,76 +29,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.topelec.smarthome.MainActivity"
+            android:name="com.topelec.smarthome.OpenCardActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/FullscreenTheme" >
-            <intent-filter>
-                <action android:name="com.topelec.smarthome.ACTION_SMARTHOME" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.topelec.smarthome.OpenCardActivity" />
+            android:theme="@style/FullscreenTheme" />
         <activity android:name="com.topelec.smarthome.Settings" />
-        <activity android:name="com.topelec.smartagriculture.MainActivity" >
-            <intent-filter>
-                <action android:name="com.topelec.smartagriculture.ACTION_AGRICULTURE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.topelec.smartagriculture.SmartAgricultureSettings" />
-        <activity android:name="com.topelec.foodtraceability.QueryActivity" >
-            <intent-filter>
-                <action android:name="com.topelec.foodtraceability.ACTION_FOODTRACEABILITY" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.topelec.foodtraceability.SettingsActivity" />
-        <activity android:name="com.topelec.buscard.CardActivityGroup" >
-            <intent-filter>
-                <action android:name="com.topelec.buscard.ACTION_BUSCARD" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.topelec.buscard.RechargeActivity" />
-        <activity android:name="com.topelec.buscard.ResumeActivity" />
-        <activity
-            android:name="com.topelec.sensortest.zigbeetest"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_zigbeetest"
-            android:theme="@style/FullscreenTheme" >
-            <intent-filter>
-                <action android:name="com.topelec.sensortest.ACTION_ZIGBEE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <!-- &lt;!&ndash;智能家居实验墙&ndash;&gt; -->
-        <!-- <activity android:name="com.topelec.smarthomewall.SmarthomeWallActivity"> -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
-        <!-- <activity -->
-        <!-- android:name="com.topelec.smarthomewall.SettingsSmarthomewall" -->
-        <!-- android:label="@string/title_activity_settings_smarthomewall"></activity> -->
-
-        <receiver android:name="com.topelec.BootReceiver" >
-            <intent-filter>
-
-                <!-- 系统启动完成后会调用 -->
-                <action android:name="android.intent.action.BOOT_COMPLETED" >
-                </action>
-            </intent-filter>
-        </receiver>
-
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
