@@ -2,20 +2,16 @@ package com.topelec.smarthome;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 
 import android.os.Bundle;
+
 import android.util.ArrayMap;
 import android.util.Log;
-
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -37,6 +33,7 @@ public class MainActivity extends Activity implements
 
     private static final String TAG = "MainActivity";
     private static final int REQ_SYSTEM_SETTINGS = 1;
+    private static final int REQ_RECAHRGE_INFO = 2;
     private boolean isLed1On;
     private boolean isLed2On;
     private boolean isLed3On;
@@ -52,6 +49,8 @@ public class MainActivity extends Activity implements
     private ImageButton btnLed2;
     private ImageButton btnLed3;
     private ImageButton btnLed4;
+
+    private ImageButton btnRecharge;
 
     private TextView tempView;
     private TextView humView;
@@ -491,6 +490,9 @@ public class MainActivity extends Activity implements
         btnLed4 = (ImageButton) findViewById(R.id.btnLed4);
         btnLed4.setOnClickListener(this);
 
+        btnRecharge = (ImageButton) findViewById(R.id.switch_to_recharge);
+        btnRecharge.setOnClickListener(this);
+
         tempView = (TextView) findViewById(R.id.tempView);
         humView = (TextView) findViewById(R.id.humView);
 
@@ -558,6 +560,9 @@ public class MainActivity extends Activity implements
                 break;
             case R.id.btnBack:
                 finish();
+                break;
+            case R.id.switch_to_recharge:
+                startActivityForResult(new Intent(this, OpenCardActivity.class), REQ_RECAHRGE_INFO);
                 break;
         }
     }

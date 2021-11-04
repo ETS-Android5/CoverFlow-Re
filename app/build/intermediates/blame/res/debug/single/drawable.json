@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodtraceability_check_wrong.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\foodtraceability_check_wrong.png"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
@@ -16,36 +12,12 @@
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_led_on.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_led_off.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_led_off.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smartagriculture_water_on.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smartagriculture_water_on.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_consume_background.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_consume_background.png"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_background.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_background.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_kichen_window_day.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_kichen_window_day.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_icon_blue.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\btn_icon_blue.xml"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
@@ -60,56 +32,32 @@
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_background.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_fire_warning.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_fire_warning.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_dark.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_dark.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_aircon_btn_on.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_aircon_btn_on.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_breakin.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_breakin.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fab_background.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\d1da25c864abb41df8689043019c21b6ec4e15b1\\output\\res\\drawable\\fab_background.xml"
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_aircon_btn_on.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_aircon_btn_on.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_consume_check_wrong.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_consume_check_wrong.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cover_selector.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\cover_selector.xml"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_btn_motor_on.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_btn_motor_on.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_button_author.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_button_author.png"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_pass.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_pass.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_bright.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_bright.png"
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cover_selector.xml",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\cover_selector.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_light1.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_light1.png"
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_bright.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_bright.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
@@ -120,16 +68,8 @@
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_button_recharge.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodtraceability_image_peanut_butter.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\foodtraceability_image_peanut_butter.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_btn_motor_off.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_btn_motor_off.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\door_open.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\door_open.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_rectangle.xml",
@@ -140,12 +80,16 @@
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\thumb_image.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recharge_label_textholder.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\recharge_label_textholder.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\access_waiting.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\access_waiting.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodtraceability_standby.png",
@@ -154,14 +98,6 @@
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodtraceability_background.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\foodtraceability_background.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smartagriculture_fan_on.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smartagriculture_fan_on.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
@@ -180,32 +116,12 @@
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_button_cancle.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_button_cancle.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\frame_button_background.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\frame_button_background.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_recharge_background.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_recharge_background.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_notpass.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_notpass.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_symbol_wrong.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_symbol_wrong.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
@@ -236,40 +152,12 @@
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smartagriculture_background.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smartagriculture_background.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_symbol_right.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_symbol_right.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_light.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_light.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\frame_button_nopressbg.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\frame_button_nopressbg.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_bedroom_window_night.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_bedroom_window_night.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\back.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_cancle.png",
@@ -278,14 +166,6 @@
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_background.xml",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\btn_background.xml"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_bedroom_curtains_close.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_bedroom_curtains_close.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\frame_panel_background.png",
@@ -308,20 +188,16 @@
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recharge_green_button.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\recharge_green_button.png"
+    },
+    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_locked_background.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_locked_background.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_bedroom_curtains_open.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_bedroom_curtains_open.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_image.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\seek_image.png"
-    },
-    {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_kichen_curtains_close.png",
@@ -340,20 +216,20 @@
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_air_con_status_on.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_air_con_status_on.png"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_bedroom_window_day.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_bedroom_window_day.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_background.png",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\button_background.png"
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_air_con_status_on.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_air_con_status_on.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodtraceability_msg_background.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\foodtraceability_msg_background.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recharge_red_button.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\recharge_red_button.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
@@ -362,5 +238,181 @@
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_consume_check_right.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_consume_check_right.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodtraceability_check_wrong.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\foodtraceability_check_wrong.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_led_off.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_led_off.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smartagriculture_water_on.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smartagriculture_water_on.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_consume_background.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_consume_background.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_kichen_window_day.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_kichen_window_day.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_icon_blue.xml",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\btn_icon_blue.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_fire_warning.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_fire_warning.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fab_background.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\d1da25c864abb41df8689043019c21b6ec4e15b1\\output\\res\\drawable\\fab_background.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_button_author.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_button_author.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_btn_motor_on.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_btn_motor_on.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_light1.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_light1.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodtraceability_image_peanut_butter.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\foodtraceability_image_peanut_butter.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_btn_motor_off.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_btn_motor_off.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\nozzle_closed.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\nozzle_closed.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\nozzle_open.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\nozzle_open.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smartagriculture_fan_on.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smartagriculture_fan_on.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_button_cancle.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_button_cancle.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\frame_button_background.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\frame_button_background.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\computer_button.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\computer_button.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_notpass.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_notpass.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_symbol_wrong.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_symbol_wrong.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smartagriculture_background.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smartagriculture_background.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_symbol_right.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_symbol_right.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_light.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_light.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\door_closed.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\door_closed.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_bedroom_window_night.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_bedroom_window_night.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_bedroom_curtains_close.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_bedroom_curtains_close.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\access_accessed.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\access_accessed.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\access_denied.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\access_denied.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recharge_new_background.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\recharge_new_background.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_image.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\seek_image.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\doctor.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\doctor.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_background.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\button_background.png"
     }
 ]
