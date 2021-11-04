@@ -69,6 +69,131 @@ public class MainActivity extends Activity implements
     private static final int HUMIDITY_SENSOR = 32;
     private static final int BRIGHTNESS_SENSOR = 40;
 
+    public String state = "empty"; // empty, 
+
+    public void stateTransferToEmpty() {
+        if(state.notEquals("leaved")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+
+        state = "empty";
+    }
+
+    public void stateTrasferToEntering() {
+        if(state.notEquals("empty")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+
+        state = "entering";
+
+        openDoorOne();
+    }
+
+    public void stateTransferToEntered() {
+        if(state.notEquals("entering")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+
+        state = "entered";
+
+        closeDoorOne();
+        startShowering();
+
+        StartNewThread(()->{
+            Thread.sleep(10 seconds);
+            sendOnWaitEndMessage();
+        })
+    }
+
+    public void stateTransferToShowered() {
+        if(state.notEquals("entered")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+
+        state = "showered";
+
+        stopShowering();
+        openDoorTwo();
+    }
+
+    public void stateTransferToLeaved() {
+        if(state.notEquals("showered")){
+            throw RuntimeException("IllegalStateTransfer");
+        }
+        state = "leaved";
+
+        closeDoorTwo();
+
+        stateTransferToEmpty();
+    }
+
+    public void openDoorOne(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void closeDoorOne(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void openDoorTwo(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void closeDoorTwo(){
+        throw RuntimeException("Not Implemented");
+    }
+
+    public void startShowering(){
+        mSensorControl.fanForward(true);
+    }
+
+    public void stopShowering(){
+        mSensorControl.fanStop(true);
+    }
+
+    // 传感器信号接收器
+
+    public void onRFID() {
+        if(status.equals("empty")) {
+            stateTransferToEntering();
+        }
+    }
+
+    public void onGuangDian() {
+        if (status.equals("entering")) {
+            stateTransferToEntered();
+        }
+
+        if (status.equals("showered")) {
+            stateTransferToLeaved();
+        }
+    }
+
+    public void onWaitEnd() {
+        if (status.equals("entered")) {
+            stateTransferToShowering();
+        }
+    }
+
+    public void sendOnRFIDMessage() {
+        Message msg = new Message();
+        msg.what = 0x21;
+        myHandler.sendMessage(msg);
+    }
+
+    public void sendOnGuangdianMessage() {
+        Message msg = new Message();
+        msg.what = 0x22;
+        myHandler.sendMessage(msg);
+    }
+
+    public sendOnWaitEndMessage() {
+        Message msg = new Message();
+        msg.what = 0x23;
+        myHandler.sendMessage(msg);
+    }
+
+
     /**
      * 用于更新UI
      */
@@ -79,6 +204,18 @@ public class MainActivity extends Activity implements
             data = msg.getData();
             switch (msg.what) {
                 //判断发送的消息
+                case 0x21:{
+                    onRFID();
+                    break;
+                }
+                case 0x22:{
+                    onGuangDian();
+                    break;
+                }
+                case 0x23:{
+                    onWaitEnd();
+                    break;
+                }
                 case 0x01:
                     switch (data.getByte("led_id")) {
                         case 0x01:
@@ -578,13 +715,7 @@ public class MainActivity extends Activity implements
 
     @Override
     public void peSensorReceive(byte sensor_status){
-        Message msg = new Message();
-        msg.what = 0x05;
-        System.out.println("peReceived");
-        Bundle data = new Bundle();
-        data.putByte("sensor_status", sensor_status);
-        msg.setData(data);
-        myHandler.sendMessage(msg);
+        sendOnGuangdianMessage();
     }
 
     public void lightSensorReceive(byte senser_status) {
