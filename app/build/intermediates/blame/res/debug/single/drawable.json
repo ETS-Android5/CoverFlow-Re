@@ -48,12 +48,12 @@
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\buscard_consume_check_wrong.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cover_selector.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\cover_selector.xml"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_pass.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthomewall_pass.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cover_selector.xml",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\cover_selector.xml"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_bright.png",

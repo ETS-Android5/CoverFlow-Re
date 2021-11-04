@@ -23,9 +23,9 @@ import com.topelec.database.DatabaseHelper;
 
 import it.moondroid.coverflowdemo.R;
 
-public class RechargeActivity extends Activity {
+public class OpenCardActivity extends Activity {
 
-    private final static String TAG = ".RechargeActivity";
+    private final static String TAG = ".OpenCardActivity";
     private ImageView statusView;
     private TextView idView;
     private TextView sumView;
@@ -160,7 +160,7 @@ public class RechargeActivity extends Activity {
                     return;
                 }
                 Log.v(TAG,"button cancel clicked");
-                AlertDialog.Builder builder = new AlertDialog.Builder(RechargeActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(OpenCardActivity.this);
                 builder.setTitle(getResources().getString(R.string.buscard_if_cancel_item));
                 builder.setPositiveButton(getResources().getString(R.string.buscard_OK), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
