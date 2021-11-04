@@ -1,10 +1,17 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:support-v4:24.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/43cc6cf3b2538074f4eb7edb906f3949c389ee9b/output/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.android/build-cache/571cc7d5a56205bf56416db338e895c6d85f8e6b/output/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.android/build-cache/571cc7d5a56205bf56416db338e895c6d85f8e6b/output/res" />
       <root url="file://$USER_HOME$/.android/build-cache/571cc7d5a56205bf56416db338e895c6d85f8e6b/output/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.android/build-cache/571cc7d5a56205bf56416db338e895c6d85f8e6b/output/jars/libs/internal_impl-24.0.0.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/43cc6cf3b2538074f4eb7edb906f3949c389ee9b/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/43cc6cf3b2538074f4eb7edb906f3949c389ee9b/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/43cc6cf3b2538074f4eb7edb906f3949c389ee9b/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/43cc6cf3b2538074f4eb7edb906f3949c389ee9b/output/jars/libs/internal_impl-24.0.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

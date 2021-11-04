@@ -76,7 +76,7 @@ public class MainActivity extends Activity implements
     private static final int BRIGHTNESS_SENSOR = 40;
 
     public String state = "empty"; // empty,
-    public ArrayMap idmap = new ArrayMap<>();
+    public ArrayList id_list = new ArrayList();
 
     public void stateTransferToEmpty() {
         if(!state.equals("leaved")){
@@ -170,7 +170,7 @@ public class MainActivity extends Activity implements
     // 传感器信号接收器
 
     public void onRFID(Bundle data) {
-        if(idmap.containsKey(data.getString("cardNo"))){
+        if(id_list.contains(data.getString("cardNo"))){
             if(state.equals("empty")) {
                 stateTransferToEntering();
             }
@@ -589,7 +589,9 @@ public class MainActivity extends Activity implements
                 finish();
                 break;
             case R.id.switch_to_recharge:
-                startActivityForResult(new Intent(this, OpenCardActivity.class), REQ_RECAHRGE_INFO);
+                Intent charge = new Intent(this, OpenCardActivity.class);
+                charge.putExtra("list",id_list);
+                startActivityForResult(charge, REQ_RECAHRGE_INFO);
                 break;
         }
     }
@@ -619,6 +621,9 @@ public class MainActivity extends Activity implements
 
         else if(requestCode == REQ_RECAHRGE_INFO){
 
+        }
+        else if(requestCode == RESULT_OK){
+            id_list = getIntent().getStringArrayListExtra("list");
         }
     }
 
