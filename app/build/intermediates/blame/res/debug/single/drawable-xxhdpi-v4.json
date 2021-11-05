@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
