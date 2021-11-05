@@ -43,6 +43,12 @@ public class MainActivity extends Activity implements
     private ImageButton btnCancelAuthor;
     private Button btnReturn;
 
+    private ImageView door1;
+    private ImageView door2;
+    private ImageView nozzle;
+    private ImageView doctor;
+    private ImageView rfidMachine;
+
     private ImageButton btnRecharge;
 
     private TextView tempView;
@@ -131,6 +137,7 @@ public class MainActivity extends Activity implements
 
     public void openDoorOne(){
         System.out.println("open door 1");
+        door1.setImageDrawable(getResources().getDrawable(R.drawable.door_open));
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
@@ -145,22 +152,27 @@ public class MainActivity extends Activity implements
     }
 
     public void closeDoorOne(){
+        door1.setImageDrawable(getResources().getDrawable(R.drawable.door_closed));
         System.out.println("close door 1");
     }
 
     public void openDoorTwo(){
+        door2.setImageDrawable(getResources().getDrawable(R.drawable.door_open));
         System.out.println("open door 2");
     }
 
     public void closeDoorTwo(){
+        door2.setImageDrawable(getResources().getDrawable(R.drawable.door_closed));
         System.out.println("close door 2");
     }
 
     public void startShowering(){
+        nozzle.setImageDrawable(getResources().getDrawable(R.drawable.nozzle_open));
         mSensorControl.fanForward(true);
     }
 
     public void stopShowering(){
+        nozzle.setImageDrawable(getResources().getDrawable(R.drawable.nozzle_closed));
         mSensorControl.fanStop(true);
     }
 
@@ -274,9 +286,12 @@ public class MainActivity extends Activity implements
 //                    }
                     else if(pageWhere.equals("main")){
                     if(id_list.contains(data.getString("cardNo")) && state.equals("empty")) {
+                        rfidMachine.setImageDrawable(getResources().getDrawable(R.drawable.access_accessed));
                         System.out.println("smarthome on!");
                         System.out.println("cardNo"+data.getString("cardNo"));
                         onRFID(data);
+                    }else{
+                        rfidMachine.setImageDrawable(getResources().getDrawable(R.drawable.access_denied));
                     }
                     }
 //                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
@@ -373,6 +388,12 @@ public class MainActivity extends Activity implements
         initialization();
         initSettings();
         mVisible = true;
+        door1 = (ImageView) findViewById(R.id.door1);
+        door2 = (ImageView) findViewById(R.id.door2);
+        nozzle =  (ImageView) findViewById(R.id.nozzle);
+        doctor = (ImageView) findViewById(R.id.doctor);
+        rfidMachine = (ImageView) findViewById(R.id.rfid_machine);
+
         mContentView = findViewById(R.id.smartkiller_content);
         recharge_page = (FrameLayout) findViewById(R.id.recharge_page);
         idView = (TextView) findViewById(R.id.idView);

@@ -13,20 +13,23 @@
         android:background="@drawable/buscard_consume_background">
 
         <ImageView
+            android:id="@+id/nozzle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="450dp"
             android:src="@drawable/nozzle_closed" />
 
         <ImageView
+            android:id="@+id/rfid_machine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="782dp"
             android:layout_marginTop="223dp"
             android:layout_marginBottom="267dp"
-            android:src="@drawable/access_waiting" />
+            android:src="@drawable/access_accessed" />
 
         <ImageView
+            android:id="@+id/doctor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="841dp"
@@ -46,12 +49,14 @@
             android:src="@drawable/computer_button" />
 
         <ImageView
+            android:id="@+id/door2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="320dp"
             android:src="@drawable/door_closed" />
 
         <ImageView
+            android:id="@+id/door1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="680dp"

@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
-        "source": "C:\\Users\\surface\\.android\\build-cache\\312c95c0ae93e80cd6851ccf0db1296aad935f1a\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\312c95c0ae93e80cd6851ccf0db1296aad935f1a\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buscard_symbol_wrong.png",
@@ -48,12 +48,12 @@
         "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\buscard_symbol_right.png"
     },
     {
-        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_breakin.png",
-        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthomewall_breakin.png"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_bright.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\smarthome_bright.png"
+    },
+    {
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_breakin.png",
+        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthomewall_breakin.png"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
@@ -62,6 +62,10 @@
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_dark.png",
         "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthome_dark.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\door_open.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\door_open.png"
     },
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smartagriculture_fan_on.png",
@@ -392,6 +396,10 @@
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\nozzle_open.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\nozzle_open.png"
+    },
+    {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthomewall_notpass.png",
         "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthomewall_notpass.png"
     },
@@ -508,6 +516,10 @@
         "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthomewall_pass.png"
     },
     {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\access_accessed.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\access_accessed.png"
+    },
+    {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
         "source": "C:\\Users\\surface\\.android\\build-cache\\312c95c0ae93e80cd6851ccf0db1296aad935f1a\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
@@ -522,6 +534,14 @@
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\access_waiting.png",
         "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\access_waiting.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\access_denied.png",
+        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\access_denied.png"
     },
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\label_background.xml",

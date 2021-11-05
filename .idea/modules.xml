@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoverFlow-master.iml" filepath="$PROJECT_DIR$/.idea/modules/CoverFlow-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CoverFlow-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CoverFlow-master.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/CoverFlow-master.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/CoverFlow-master.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.moondroid.coverflow.CoverFlow-master.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.moondroid.coverflow.CoverFlow-master.iml" />
     </modules>
   </component>
 </project>

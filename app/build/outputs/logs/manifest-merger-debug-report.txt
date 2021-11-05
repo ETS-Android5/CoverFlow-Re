@@ -1,115 +1,115 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:3:5-41
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:5:6-26:20
-MERGED from [com.github.moondroid.coverflow:lib:1.0] D:\CoverFlow-Re\lib\build\intermediates\bundles\default\AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support:design:22.2.1] C:\Users\surface\.android\build-cache\2e9a0f885f670cb99275f9f824a3378041e4472d\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\surface\.android\build-cache\51bf72905c698c27c24083521c8d344e48f48541\output\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\surface\.android\build-cache\fa070a78dcefe0b89b971c35cd1dbb3fa0a41f21\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\surface\.android\build-cache\312c95c0ae93e80cd6851ccf0db1296aad935f1a\output\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\surface\.android\build-cache\aebd3ce87533eb27de0195f3a1495e10fecd971a\output\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\surface\.android\build-cache\fe00872edcfea1831f54ec2b0e435b57dc4d7560\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\surface\.android\build-cache\ee4c867be69fdb5a3b1641be14739dea76a9e331\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:24.0.0] C:\Users\surface\.android\build-cache\43cc6cf3b2538074f4eb7edb906f3949c389ee9b\output\AndroidManifest.xml:25:5-20
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:5:6-26:20
+MERGED from [com.github.moondroid.coverflow:lib:1.0] D:\Code\CoverFlow-master\lib\build\intermediates\bundles\default\AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support:design:22.2.1] C:\Users\Colanns\.android\build-cache\d1da25c864abb41df8689043019c21b6ec4e15b1\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\Colanns\.android\build-cache\fd6aa44301c1c110a470d0d7029d5a2015e2c279\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Colanns\.android\build-cache\0c3ddb0ba67c5ee8ff603fd0d20e8d27342c79ee\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Colanns\.android\build-cache\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Colanns\.android\build-cache\a79d6e2a4687ed2eadaf571312233c21c2f60c10\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Colanns\.android\build-cache\bb48f995f9b8c6369a554206f9f907440e6d0acd\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Colanns\.android\build-cache\f90fa21f513f69ad135a08b6ab293c8f20b6ac1d\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Colanns\.android\build-cache\571cc7d5a56205bf56416db338e895c6d85f8e6b\output\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:8:10-42
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:8:10-42
 	android:allowBackup
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:6:10-36
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:6:10-36
 	android:icon
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:7:10-37
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:7:10-37
 	android:theme
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:9:10-53
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:9:10-53
 activity#com.buaa.smartkiller.MainActivity
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:10:11-20:22
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:10:11-20:22
 	android:screenOrientation
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:14:15-52
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:14:15-52
 	android:label
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:12:15-47
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:12:15-47
 	android:configChanges
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:11:15-76
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:11:15-76
 	android:theme
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:13:15-58
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:13:15-58
 	android:name
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:10:21-69
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:10:21-69
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:15:16-19:32
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:15:16-19:32
 action#android.intent.action.MAIN
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:16:21-73
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:16:21-73
 	android:name
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:16:29-70
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:16:29-70
 category#android.intent.category.LAUNCHER
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:18:21-81
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:18:21-81
 	android:name
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:18:31-78
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:18:31-78
 activity#com.buaa.smartkiller.OpenCardActivity
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:21:11-24:17
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:21:11-24:17
 	android:configChanges
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:22:15-76
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:22:15-76
 	android:theme
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:23:15-53
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:23:15-53
 	android:name
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:21:21-73
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:21:21-73
 activity#com.buaa.smartkiller.Settings
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:25:11-68
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:25:11-68
 	android:name
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:25:21-65
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:25:21-65
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:29:6-98
+ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:29:6-98
 	android:name
-		ADDED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml:29:23-79
+		ADDED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml:29:23-79
 uses-sdk
-INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.github.moondroid.coverflow:lib:1.0] D:\CoverFlow-Re\lib\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:22.2.1] C:\Users\surface\.android\build-cache\2e9a0f885f670cb99275f9f824a3378041e4472d\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\surface\.android\build-cache\51bf72905c698c27c24083521c8d344e48f48541\output\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\surface\.android\build-cache\fa070a78dcefe0b89b971c35cd1dbb3fa0a41f21\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\surface\.android\build-cache\312c95c0ae93e80cd6851ccf0db1296aad935f1a\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\surface\.android\build-cache\aebd3ce87533eb27de0195f3a1495e10fecd971a\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\surface\.android\build-cache\fe00872edcfea1831f54ec2b0e435b57dc4d7560\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\surface\.android\build-cache\ee4c867be69fdb5a3b1641be14739dea76a9e331\output\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:24.0.0] C:\Users\surface\.android\build-cache\43cc6cf3b2538074f4eb7edb906f3949c389ee9b\output\AndroidManifest.xml:21:5-23:54
+INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.github.moondroid.coverflow:lib:1.0] D:\Code\CoverFlow-master\lib\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:22.2.1] C:\Users\Colanns\.android\build-cache\d1da25c864abb41df8689043019c21b6ec4e15b1\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\Colanns\.android\build-cache\fd6aa44301c1c110a470d0d7029d5a2015e2c279\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Colanns\.android\build-cache\0c3ddb0ba67c5ee8ff603fd0d20e8d27342c79ee\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Colanns\.android\build-cache\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Colanns\.android\build-cache\a79d6e2a4687ed2eadaf571312233c21c2f60c10\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Colanns\.android\build-cache\bb48f995f9b8c6369a554206f9f907440e6d0acd\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Colanns\.android\build-cache\f90fa21f513f69ad135a08b6ab293c8f20b6ac1d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Colanns\.android\build-cache\571cc7d5a56205bf56416db338e895c6d85f8e6b\output\AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.0.0] C:\Users\surface\.android\build-cache\43cc6cf3b2538074f4eb7edb906f3949c389ee9b\output\AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:24.0.0] C:\Users\Colanns\.android\build-cache\571cc7d5a56205bf56416db338e895c6d85f8e6b\output\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CoverFlow-Re\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Code\CoverFlow-master\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\surface\.android\build-cache\312c95c0ae93e80cd6851ccf0db1296aad935f1a\output\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Colanns\.android\build-cache\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\surface\.android\build-cache\312c95c0ae93e80cd6851ccf0db1296aad935f1a\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Colanns\.android\build-cache\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\surface\.android\build-cache\312c95c0ae93e80cd6851ccf0db1296aad935f1a\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Colanns\.android\build-cache\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\surface\.android\build-cache\312c95c0ae93e80cd6851ccf0db1296aad935f1a\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Colanns\.android\build-cache\744f90e9ec0f7787776ecf9d90bfa432d40b0e0d\output\AndroidManifest.xml:19:19-85
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\surface\.android\build-cache\aebd3ce87533eb27de0195f3a1495e10fecd971a\output\AndroidManifest.xml:6:9-175
+ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Colanns\.android\build-cache\a79d6e2a4687ed2eadaf571312233c21c2f60c10\output\AndroidManifest.xml:6:9-175
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\surface\.android\build-cache\aebd3ce87533eb27de0195f3a1495e10fecd971a\output\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Colanns\.android\build-cache\a79d6e2a4687ed2eadaf571312233c21c2f60c10\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\surface\.android\build-cache\aebd3ce87533eb27de0195f3a1495e10fecd971a\output\AndroidManifest.xml:6:125-149
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Colanns\.android\build-cache\a79d6e2a4687ed2eadaf571312233c21c2f60c10\output\AndroidManifest.xml:6:125-149
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\surface\.android\build-cache\aebd3ce87533eb27de0195f3a1495e10fecd971a\output\AndroidManifest.xml:6:150-173
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Colanns\.android\build-cache\a79d6e2a4687ed2eadaf571312233c21c2f60c10\output\AndroidManifest.xml:6:150-173
 	android:name
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\surface\.android\build-cache\aebd3ce87533eb27de0195f3a1495e10fecd971a\output\AndroidManifest.xml:6:79-124
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Colanns\.android\build-cache\a79d6e2a4687ed2eadaf571312233c21c2f60c10\output\AndroidManifest.xml:6:79-124
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\surface\.android\build-cache\ee4c867be69fdb5a3b1641be14739dea76a9e331\output\AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Colanns\.android\build-cache\f90fa21f513f69ad135a08b6ab293c8f20b6ac1d\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\surface\.android\build-cache\ee4c867be69fdb5a3b1641be14739dea76a9e331\output\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Colanns\.android\build-cache\f90fa21f513f69ad135a08b6ab293c8f20b6ac1d\output\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\surface\.android\build-cache\ee4c867be69fdb5a3b1641be14739dea76a9e331\output\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Colanns\.android\build-cache\f90fa21f513f69ad135a08b6ab293c8f20b6ac1d\output\AndroidManifest.xml:20:20-65
