@@ -2,15 +2,24 @@ package com.buaa.smartkiller;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
+import android.content.ContentValues;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.buaa.rfidcontrol.ModulesControl;
@@ -56,9 +65,10 @@ public class OpenCardActivity extends Activity {
                     break;
                 case Command.HF_ID:      //防冲突（获取卡号）返回结果
 
-                    System.out.println(data.getString("cardNo"));
-                    idView.setText("识别到卡号:"+data.getString("cardNo"));
-                    cardNo = data.getString("cardNo");
+//                    System.out.println(data.getString("cardNo"));
+                    if(data.getString("cardNo")!=null) {
+                        cardNo = data.getString("cardNo");
+                    }
 
 //                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
 
@@ -81,6 +91,11 @@ public class OpenCardActivity extends Activity {
         mModulesControl.actionControl(true);
 
         id_list = getIntent().getStringArrayListExtra("list");
+        System.out.println("开始进入注册");
+        for(int i = 0; i < id_list.size(); i++){
+            System.out.println(id_list.get(i));
+        }
+        System.out.println("结束进入");
 
         btnAuthor = (ImageButton) findViewById(R.id.btn_author);
         btnAuthor.setOnClickListener(new View.OnClickListener() {
@@ -88,10 +103,12 @@ public class OpenCardActivity extends Activity {
             public void onClick(View v) {
                 if(cardNo.equals("")){
                     idView.setText("请将磁卡放置于刷卡器上");
-                    System.out.println("请将磁卡放置于刷卡器上");
                 }else{
-                    id_list.add(cardNo);
-                    idView.setText("注册成功");
+                    if(!id_list.contains(cardNo)) {
+                        id_list.add(cardNo);
+                        idView.setText("卡号"+cardNo+"注册成功");
+
+                    }
                 }
                 cardNo = "";
             }
@@ -103,14 +120,16 @@ public class OpenCardActivity extends Activity {
                 if(cardNo.equals("")){
                     idView.setText("请将磁卡放置于刷卡器上");
                 }else{
-                    id_list.remove(cardNo);
-                    idView.setText("注销成功");
+                    if(id_list.contains(cardNo)) {
+                        id_list.remove(cardNo);
+                        idView.setText("注销成功");
+                    }
                 }
                 cardNo = "";
             }
         });
         idView = (TextView) findViewById(R.id.idView);
-
+        idView.setText("请将磁卡放置于刷卡器上");
         // 在这里填入需要返回的内容
         btnReturn = (Button) findViewById(R.id.btn_back);
         btnReturn.setOnClickListener(new View.OnClickListener() {
@@ -119,13 +138,13 @@ public class OpenCardActivity extends Activity {
                 cardNo = "";
                 Intent returnInte = getIntent();
                 System.out.println("开始返回");
-                String id_list_string = new String();
-                for(int i = 0; i < id_list.size(); i++){
-                    id_list_string += "+"+id_list.get(i);
-                }
-                System.out.println("ID_LIST:" + id_list_string);
+//                String id_list_string = new String();
+//                for(int i = 0; i < id_list.size(); i++){
+//                    id_list_string += "+"+id_list.get(i);
+//                }
+//                System.out.println("ID_LIST:" + id_list_string);
                 System.out.println("结束返回");
-                returnInte.putExtra("list",id_list_string);
+                returnInte.putExtra("list",id_list);
                 setResult(RESULT_OK, returnInte);
                 finish();
             }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/recharge_new_background"
-    tools:context="com.topelec.smarthome.OpenCardActivity">
+    tools:context="com.buaa.smartkiller.OpenCardActivity">
 
 
     <!--    <ImageView-->
@@ -17,7 +17,6 @@
     <!--        android:scaleType="fitCenter"-->
     <!--        android:src="@drawable/buscard_recharge_standby" />-->
     <ImageView
-        android:id="@+id/recharge_label_textholder"
         android:layout_width="305dp"
         android:layout_height="40dp"
         android:layout_marginLeft="360dp"

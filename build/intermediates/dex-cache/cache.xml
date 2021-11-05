@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="D:\CoverFlow-Re\lib\build\intermediates\bundles\default\classes.jar"
+        jar="D:\Code\CoverFlow-master\lib\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="b00240729c1b62eaf5aeaf05e18d460c3da2ddbf">
-        <dex dex="D:\CoverFlow-Re\app\build\intermediates\pre-dexed\debug\classes_8a9050e7641f4c202966e91602957070d5da255c.jar" />
+        <dex dex="D:\Code\CoverFlow-master\app\build\intermediates\pre-dexed\debug\classes_490e6593e5ce72b099164f210fba691b1620051e.jar" />
     </item>
 
 </items>
