@@ -23,6 +23,7 @@ import com.buaa.zigbeecontrol.Command;
 import com.buaa.zigbeecontrol.SensorControl;
 
 import java.util.ArrayList;
+import java.util.jar.JarOutputStream;
 
 import it.moondroid.coverflowdemo.R;
 
@@ -209,9 +210,12 @@ public class MainActivity extends Activity implements
         myHandler.sendMessage(msg);
     }
 
-    public void sendOnGuangdianMessage() {
+    public void sendOnGuangdianMessage(byte sensor_status) {
         Message msg = new Message();
         msg.what = 0x22;
+        Bundle data = new Bundle();
+        data.putByte("senser_status", sensor_status);
+        msg.setData(data);
         System.out.println("perecived");
         myHandler.sendMessage(msg);
     }
@@ -305,7 +309,13 @@ public class MainActivity extends Activity implements
 
                     break;
                 case 0x22:{
-                    onGuangDian();
+                    System.out.println("before:"+data.getByte("senser_status"));
+                    if(data.getByte("senser_status") == 0x01) {
+                        onGuangDian();
+                    }
+                    else{
+                        System.out.println("没中断捏");
+                    }
                     break;
                 }
                 case 0x23:{
@@ -622,7 +632,8 @@ public class MainActivity extends Activity implements
 
     @Override
     public void peSensorReceive(byte sensor_status){
-        sendOnGuangdianMessage();
+        System.out.println("receive:"+sensor_status);
+        sendOnGuangdianMessage(sensor_status);
     }
 
     public void lightSensorReceive(byte senser_status) {
