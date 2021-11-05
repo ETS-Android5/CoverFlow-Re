@@ -67,8 +67,9 @@ public class OpenCardActivity extends Activity {
                 case Command.HF_ID:      //防冲突（获取卡号）返回结果
 
                     System.out.println(data.getString("cardNo"));
-                    idView.setText("识别到卡号:"+data.getString("cardNo"));
-                    cardNo = data.getString("cardNo");
+                    if(data.getString("cardNo")!=null) {
+                        cardNo = data.getString("cardNo");
+                    }
 
 //                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
 
@@ -91,6 +92,11 @@ public class OpenCardActivity extends Activity {
         mModulesControl.actionControl(true);
 
         id_list = getIntent().getStringArrayListExtra("list");
+        System.out.println("开始进入注册");
+        for(int i = 0; i < id_list.size(); i++){
+            System.out.println(id_list.get(i));
+        }
+        System.out.println("结束进入");
 
         btnAuthor = (ImageButton) findViewById(R.id.btn_author);
         btnAuthor.setOnClickListener(new View.OnClickListener() {
@@ -98,10 +104,12 @@ public class OpenCardActivity extends Activity {
             public void onClick(View v) {
                 if(cardNo.equals("")){
                     idView.setText("请将磁卡放置于刷卡器上");
-                    System.out.println("请将磁卡放置于刷卡器上");
                 }else{
-                    id_list.add(cardNo);
-                    idView.setText("注册成功");
+                    if(!id_list.contains(cardNo)) {
+                        id_list.add(cardNo);
+                        idView.setText("卡号"+cardNo+"注册成功");
+
+                    }
                 }
                 cardNo = "";
             }
@@ -113,14 +121,16 @@ public class OpenCardActivity extends Activity {
                 if(cardNo.equals("")){
                     idView.setText("请将磁卡放置于刷卡器上");
                 }else{
-                    id_list.remove(cardNo);
-                    idView.setText("注销成功");
+                    if(id_list.contains(cardNo)) {
+                        id_list.remove(cardNo);
+                        idView.setText("注销成功");
+                    }
                 }
                 cardNo = "";
             }
         });
         idView = (TextView) findViewById(R.id.idView);
-
+        idView.setText("请将磁卡放置于刷卡器上");
         // 在这里填入需要返回的内容
         btnReturn = (Button) findViewById(R.id.btn_back);
         btnReturn.setOnClickListener(new View.OnClickListener() {
@@ -129,10 +139,10 @@ public class OpenCardActivity extends Activity {
                 cardNo = "";
                 Intent returnInte = new Intent();
                 System.out.println("开始返回");
-                String id_list_string = new String();
-                for(int i = 0; i < id_list.size(); i++){
-                    id_list_string += "+"+id_list.get(i);
-                }
+                String id_list_string = new String("嘿嘿");
+//                for(int i = 0; i < id_list.size(); i++){
+//                    id_list_string += "+"+id_list.get(i);
+//                }
                 System.out.println("结束返回");
                 returnInte.putExtra("list",id_list_string);
                 setResult(RESULT_OK, returnInte);
