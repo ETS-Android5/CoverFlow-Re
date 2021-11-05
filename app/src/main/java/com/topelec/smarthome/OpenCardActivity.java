@@ -127,12 +127,13 @@ public class OpenCardActivity extends Activity {
             @Override
             public void onClick(View v) {
                 cardNo = "";
-                Intent returnInte = new Intent();
+                Intent returnInte = getIntent();
                 System.out.println("开始返回");
                 String id_list_string = new String();
                 for(int i = 0; i < id_list.size(); i++){
                     id_list_string += "+"+id_list.get(i);
                 }
+                System.out.println("ID_LIST:" + id_list_string);
                 System.out.println("结束返回");
                 returnInte.putExtra("list",id_list_string);
                 setResult(RESULT_OK, returnInte);

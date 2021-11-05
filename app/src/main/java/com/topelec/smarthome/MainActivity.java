@@ -616,23 +616,8 @@ public class MainActivity extends Activity implements
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        if (requestCode == REQ_SYSTEM_SETTINGS) {
-
-            PreferenceManager.setDefaultValues(this,R.xml.settings_smarthome,false);
-            SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
-            isAutoTempHum = settings.getBoolean("auto_temp_switch",true);
-            isAutoBrightness = settings.getBoolean("auto_bright_switch",true);
-            settingTemperature = Integer.parseInt(settings.getString("temp_settings","27"));
-            settingHumidity = Integer.parseInt(settings.getString("hum_settings","40"));
-
-        }
-
-        else if(requestCode == REQ_RECAHRGE_INFO){
-
-        }
-        else if(requestCode == RESULT_OK){
-            System.out.println(getIntent().getStringExtra("list"));
+        if(requestCode == REQ_RECAHRGE_INFO && resultCode == RESULT_OK){
+            System.out.println("Return Code: "+data.getExtras().getString("list"));
 //            id_list = getIntent().getStringArrayListExtra("list");
         }
     }
