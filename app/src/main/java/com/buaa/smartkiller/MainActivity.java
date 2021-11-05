@@ -14,6 +14,7 @@ import android.util.ArrayMap;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -34,21 +35,13 @@ public class MainActivity extends Activity implements
     private static final String TAG = "MainActivity";
     private static final int REQ_SYSTEM_SETTINGS = 1;
     private static final int REQ_RECAHRGE_INFO = 2;
-    private boolean isLed1On;
-    private boolean isLed2On;
-    private boolean isLed3On;
-    private boolean isLed4On;
 
-    private int Temp;
-    private int Hum;
 
-    private boolean fanStatus;
-    private boolean isBright;
-
-    private ImageButton btnLed1;
-    private ImageButton btnLed2;
-    private ImageButton btnLed3;
-    private ImageButton btnLed4;
+    private FrameLayout recharge_page;
+    private TextView idView;
+    private ImageButton btnAuthor;
+    private ImageButton btnCancelAuthor;
+    private Button btnReturn;
 
     private ImageButton btnRecharge;
 
@@ -68,6 +61,8 @@ public class MainActivity extends Activity implements
 
     public String state = "empty"; // empty,
     public ArrayList id_list = new ArrayList();
+    public String cardNo = new String();
+    public String pageWhere = "main";
 
     public void stateTransferToEmpty() {
         if(!state.equals("leaved")){
@@ -146,7 +141,7 @@ public class MainActivity extends Activity implements
 //                }
 //            }
 //        }).start();
-        mSensorControl.fanForward(true);
+//        mSensorControl.fanForward(true);
     }
 
     public void closeDoorOne(){
@@ -217,6 +212,7 @@ public class MainActivity extends Activity implements
 
     Handler rfhandler = new Handler(){
         public void handleMessage(Message msg){
+            System.out.println("main rfid on\n");
             Bundle data;
             data = msg.getData();
             switch (msg.what) {
@@ -255,6 +251,7 @@ public class MainActivity extends Activity implements
     Handler myHandler = new Handler() {
         //2.重写消息处理函数
         public void handleMessage(Message msg) {
+            System.out.println("main zigbee on\n");
             Bundle data;
             data = msg.getData();
             switch (msg.what) {
@@ -265,6 +262,26 @@ public class MainActivity extends Activity implements
 ////                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
 //
 //                    break;
+                case Command.HF_ID:      //防冲突（获取卡号）返回结果
+
+                    data = msg.getData();
+                    System.out.println(state);
+                    if(pageWhere.equals("author")){
+                        cardNo = data.getString("cardNo");
+                    }
+//                    for(int i = 0; i < id_list.size(); i++){
+//                        System.out.println(id_list.get(i));
+//                    }
+                    else if(pageWhere.equals("main")){
+                    if(id_list.contains(data.getString("cardNo")) && state.equals("empty")) {
+                        System.out.println("smarthome on!");
+                        System.out.println("cardNo"+data.getString("cardNo"));
+                        onRFID(data);
+                    }
+                    }
+//                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
+
+                    break;
                 case 0x22:{
                     onGuangDian();
                     break;
@@ -327,49 +344,90 @@ public class MainActivity extends Activity implements
 
 
     //显示程序中的底部控制按钮
-    private View mControlsView;
-    private View mBackView;
-    private final Runnable mShowPart2Runnable = new Runnable() {
-        @Override
-        public void run() {
-
-            mControlsView.setVisibility(View.VISIBLE);
-            mBackView.setVisibility(View.VISIBLE);
-        }
-    };
+//    private View mControlsView;
+//    private View mBackView;
+//    private final Runnable mShowPart2Runnable = new Runnable() {
+//        @Override
+//        public void run() {
+//
+//            mControlsView.setVisibility(View.VISIBLE);
+//            mBackView.setVisibility(View.VISIBLE);
+//        }
+//    };
 
 
     private boolean mVisible;
-    private final Runnable mHideRunnable = new Runnable() {
-        @Override
-        public void run() {
-            hide();
-        }
-    };
+//    private final Runnable mHideRunnable = new Runnable() {
+//        @Override
+//        public void run() {
+//            hide();
+//        }
+//    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+//        id_list.add("1B15029E");
+
         setContentView(R.layout.activity_smarthome);
         initialization();
         initSettings();
         mVisible = true;
-        mControlsView = findViewById(R.id.smarthome_settings);
-        mContentView = findViewById(R.id.smarthome_content);
+        mContentView = findViewById(R.id.smartkiller_content);
+        recharge_page = (FrameLayout) findViewById(R.id.recharge_page);
+        idView = (TextView) findViewById(R.id.idView);
+        btnAuthor = (ImageButton) findViewById(R.id.btn_author);
+        btnAuthor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cardNo.equals("")){
+                    idView.setText("请将磁卡放置于刷卡器上");
+                }else{
+                    if(!id_list.contains(cardNo)) {
+                        id_list.add(cardNo);
+//                        System.out.println("卡号"+cardNo+"注册成功");
+                        idView.setText("卡号"+cardNo+"注册成功");
 
-        mBackView = findViewById(R.id.smarthome_back);
-
+                    }
+                }
+                cardNo = "";
+            }
+        });
+        btnCancelAuthor = (ImageButton) findViewById(R.id.btn_cancel_author);
+        btnCancelAuthor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cardNo.equals("")){
+                    idView.setText("请将磁卡放置于刷卡器上");
+                }else{
+                    if(id_list.contains(cardNo)) {
+                        id_list.remove(cardNo);
+                        idView.setText("注销成功");
+                    }
+                }
+                cardNo = "";
+            }
+        });
+        btnReturn = (Button) findViewById(R.id.btn_back);
+        btnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cardNo = "";
+                recharge_page.setVisibility(View.INVISIBLE);
+                pageWhere = "main";
+            }
+        });
 
         // Set up the user interaction to manually show or hide the system UI.
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toggle();
+               // toggle();
             }
         });
 
-        mModulesControl = new ModulesControl(rfhandler);
+        mModulesControl = new ModulesControl(myHandler);
         mModulesControl.actionControl(true);
         mSensorControl = new SensorControl();
 //        mSensorControl.addLedListener(this);
@@ -379,79 +437,58 @@ public class MainActivity extends Activity implements
     }
 
 
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
+//    @Override
+//    protected void onPostCreate(Bundle savedInstanceState) {
+//        super.onPostCreate(savedInstanceState);
+//
+//        delayedHide(100);
+//    }
 
-        delayedHide(100);
-    }
+//    private void toggle() {
+//        if (mVisible) {
+//            //hide();
+//        } else {
+//            show();
+//            delayedHide(AUTO_HIDE_DELAY_MILLIS);
+//        }
+//    }
 
-    private void toggle() {
-        if (mVisible) {
-            hide();
-        } else {
-            show();
-            delayedHide(AUTO_HIDE_DELAY_MILLIS);
-        }
-    }
-
-    private void hide() {
-
-        mControlsView.setVisibility(View.GONE);
-        mBackView.setVisibility(View.GONE);
-        mVisible = false;
-
-        // Schedule a runnable to remove the status and navigation bar after a delay
-        mHideHandler.removeCallbacks(mShowPart2Runnable);
-        mHideHandler.postDelayed(mHidePart2Runnable, UI_ANIMATION_DELAY);
-    }
+//    private void hide() {
+//
+//        mControlsView.setVisibility(View.GONE);
+//        mBackView.setVisibility(View.GONE);
+//        mVisible = false;
+//
+//        // Schedule a runnable to remove the status and navigation bar after a delay
+//        mHideHandler.removeCallbacks(mShowPart2Runnable);
+//        mHideHandler.postDelayed(mHidePart2Runnable, UI_ANIMATION_DELAY);
+//    }
 
     @SuppressLint("InlinedApi")
-    private void show() {
-        mVisible = true;
-        mHideHandler.postDelayed(mShowPart2Runnable, UI_ANIMATION_DELAY);
-    }
-
-    private void delayedHide(int delayMillis) {
-        mHideHandler.removeCallbacks(mHideRunnable);
-        mHideHandler.postDelayed(mHideRunnable, delayMillis);
-    }
+//    private void show() {
+//        mVisible = true;
+//        mHideHandler.postDelayed(mShowPart2Runnable, UI_ANIMATION_DELAY);
+//    }
+//
+//    private void delayedHide(int delayMillis) {
+//        mHideHandler.removeCallbacks(mHideRunnable);
+//        mHideHandler.postDelayed(mHideRunnable, delayMillis);
+//    }
 
     private void initialization()
     {
-        fanStatus = false;
-
-
-        btnLed1 = (ImageButton) findViewById(R.id.btnLed1);
-        btnLed1.setOnClickListener(this);
-
-        btnLed2 = (ImageButton) findViewById(R.id.btnLed2);
-        btnLed2.setOnClickListener(this);
-
-        btnLed3 = (ImageButton) findViewById(R.id.btnLed3);
-        btnLed3.setOnClickListener(this);
-
-        btnLed4 = (ImageButton) findViewById(R.id.btnLed4);
-        btnLed4.setOnClickListener(this);
+//        fanStatus = false;
 
         btnRecharge = (ImageButton) findViewById(R.id.switch_to_recharge);
-        btnRecharge.setOnClickListener(this);
+        btnRecharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        tempView = (TextView) findViewById(R.id.tempView);
-        humView = (TextView) findViewById(R.id.humView);
-
-        fanView = (ImageView) findViewById(R.id.fanView);
-        btnStart = (ImageButton) findViewById(R.id.btnStart);
-        btnStart.setOnClickListener(this);
-
-        brightnessView = (ImageView) findViewById(R.id.brightnessView);
-
-        btnSettings = (Button) findViewById(R.id.btnSettings);
-        btnSettings.setOnClickListener(this);
-
-        btnBack = (Button) findViewById(R.id.btnBack);
-        btnBack.setOnClickListener(this);
-
+                recharge_page.setVisibility(View.VISIBLE);
+                pageWhere = "author";
+            }
+        });
+//        btnRecharge.setOnClickListener(this);
     }
 
     @Override
@@ -459,11 +496,11 @@ public class MainActivity extends Activity implements
 
         switch (v.getId())
         {
-            case R.id.switch_to_recharge:
-                Intent charge = new Intent(this, OpenCardActivity.class);
-                charge.putExtra("list",id_list);
-                startActivityForResult(charge, REQ_RECAHRGE_INFO);
-                break;
+//            case R.id.switch_to_recharge:
+//                Intent charge = new Intent(this, OpenCardActivity.class);
+//                charge.putExtra("list",id_list);
+//                startActivityForResult(charge, REQ_RECAHRGE_INFO);
+//                break;
         }
     }
 
@@ -473,16 +510,16 @@ public class MainActivity extends Activity implements
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode == REQ_RECAHRGE_INFO && resultCode == RESULT_OK){
-//            System.out.println("Return Code: "+data.getExtras().getString("list"));
-            id_list = data.getStringArrayListExtra("list");
-            System.out.println("kaishi ");
-            for(int i = 0; i < id_list.size(); i++){
-                System.out.println(id_list.get(i));
-            }
-            System.out.println("jieshu");
-        }
-        mModulesControl.actionControl(true);
+//        if(requestCode == REQ_RECAHRGE_INFO && resultCode == RESULT_OK){
+////            System.out.println("Return Code: "+data.getExtras().getString("list"));
+//            id_list = data.getStringArrayListExtra("list");
+//            System.out.println("kaishi ");
+//            for(int i = 0; i < id_list.size(); i++){
+//                System.out.println(id_list.get(i));
+//            }
+//            System.out.println("jieshu");
+//        }
+//        mModulesControl.actionControl(true);
     }
 
     /**

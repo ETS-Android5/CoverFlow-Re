@@ -33,7 +33,6 @@ public class OpenCardActivity extends Activity {
 
     private final static String TAG = ".OpenCardActivity";
     private TextView idView;
-    private EditText rechargeText;
     private ImageButton btnAuthor;
     private ImageButton btnCancelAuthor;
     private Button btnReturn;
@@ -48,6 +47,7 @@ public class OpenCardActivity extends Activity {
 
     Handler rfhander = new Handler(){
         public void handleMessage(Message msg){
+            System.out.println("author rfid on\n");
             Bundle data;
             data = msg.getData();
             switch (msg.what) {
@@ -106,6 +106,7 @@ public class OpenCardActivity extends Activity {
                 }else{
                     if(!id_list.contains(cardNo)) {
                         id_list.add(cardNo);
+//                        System.out.println("卡号"+cardNo+"注册成功");
                         idView.setText("卡号"+cardNo+"注册成功");
 
                     }

@@ -100,10 +100,6 @@
         "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthomewall_locked_background.png"
     },
     {
-        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_btn_motor_off.png",
-        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthome_btn_motor_off.png"
-    },
-    {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
@@ -126,10 +122,6 @@
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\thumb_image.xml",
         "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\thumb_image.xml"
-    },
-    {
-        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_background.xml",
-        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\btn_background.xml"
     },
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
@@ -166,10 +158,6 @@
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_image.png",
         "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\seek_image.png"
-    },
-    {
-        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_bright.png",
-        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthome_bright.png"
     },
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
@@ -574,10 +562,6 @@
     {
         "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\doctor.png",
         "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\drawable\\doctor.png"
-    },
-    {
-        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smarthome_led_off.png",
-        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\drawable\\smarthome_led_off.png"
     },
     {
         "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodtraceability_image_peanut_butter.png",
