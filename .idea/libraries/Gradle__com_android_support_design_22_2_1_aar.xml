@@ -1,5 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design:22.2.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/d1da25c864abb41df8689043019c21b6ec4e15b1/output/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.android/build-cache/d1da25c864abb41df8689043019c21b6ec4e15b1/output/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.android/build-cache/d1da25c864abb41df8689043019c21b6ec4e15b1/output/res" />
