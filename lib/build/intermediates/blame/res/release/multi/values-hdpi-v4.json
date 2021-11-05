@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+        "outputFile": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 325
                 },
                 "from": {
-                    "file": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\values-hdpi\\values-hdpi.xml",
+                    "file": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\values-hdpi\\values-hdpi.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

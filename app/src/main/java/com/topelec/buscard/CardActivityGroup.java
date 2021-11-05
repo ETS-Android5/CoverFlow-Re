@@ -167,8 +167,9 @@ public class CardActivityGroup extends ActivityGroup {
 
                     break;
                 case Command.HF_ID:      //防冲突（获取卡号）返回结果
-
+                    System.out.println("buacard on!");
                     data = msg.getData();
+                    System.out.println("cardNo"+data.getString("cardNo"));
                     intent.putExtra("what",3);
 
                     if (data.getBoolean("result")) {

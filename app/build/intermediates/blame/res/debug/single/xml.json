@@ -1,30 +1,30 @@
 [
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_general.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\xml\\pref_general.xml"
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\xml\\settings_smarthome.xml",
+        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\xml\\settings_smarthome.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\settings_smarthome.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\xml\\settings_smarthome.xml"
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\xml\\settings_foodtraceability.xml",
+        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\xml\\settings_foodtraceability.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_data_sync.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\xml\\pref_data_sync.xml"
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_notification.xml",
+        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\xml\\pref_notification.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\settings_foodtraceability.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\xml\\settings_foodtraceability.xml"
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\xml\\settings_smartagriculture.xml",
+        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\xml\\settings_smartagriculture.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_notification.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\xml\\pref_notification.xml"
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_headers.xml",
+        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\xml\\pref_headers.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\settings_smartagriculture.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\xml\\settings_smartagriculture.xml"
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_general.xml",
+        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\xml\\pref_general.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_headers.xml",
-        "source": "D:\\Code\\CoverFlow-master\\app\\src\\main\\res\\xml\\pref_headers.xml"
+        "merged": "D:\\CoverFlow-Re\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_data_sync.xml",
+        "source": "D:\\CoverFlow-Re\\app\\src\\main\\res\\xml\\pref_data_sync.xml"
     }
 ]

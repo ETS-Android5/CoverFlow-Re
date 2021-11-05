@@ -243,8 +243,17 @@ public class MainActivity extends Activity implements
 
                     break;
                 case Command.HF_ID:      //防冲突（获取卡号）返回结果
-
-                    onRFID(data);
+                    System.out.println("进来了hfid");
+                    System.out.println("cardNo"+data.getString("cardNo"));
+                    data = msg.getData();
+                    for(int i = 0; i < id_list.size(); i++){
+                        System.out.println(id_list.get(i));
+                    }
+                    if(id_list.contains(data.getString("cardNo"))) {
+                        System.out.println("smarthome on!");
+                        System.out.println("cardNo"+data.getString("cardNo"));
+                        onRFID(data);
+                    }
 //                    Log.v(TAG,"Result = "+ data.getString("cardNo"));
 
                     break;
@@ -623,7 +632,8 @@ public class MainActivity extends Activity implements
 
         }
         else if(requestCode == RESULT_OK){
-            id_list = getIntent().getStringArrayListExtra("list");
+            System.out.println(getIntent().getStringExtra("list"));
+//            id_list = getIntent().getStringArrayListExtra("list");
         }
     }
 

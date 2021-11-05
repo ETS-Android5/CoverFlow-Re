@@ -1,42 +1,42 @@
 [
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_fade_out.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_fade_in.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_popup_enter.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_popup_exit.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "D:\\Code\\CoverFlow-master\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Colanns\\.android\\build-cache\\fd6aa44301c1c110a470d0d7029d5a2015e2c279\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "D:\\CoverFlow-Re\\lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\surface\\.android\\build-cache\\51bf72905c698c27c24083521c8d344e48f48541\\output\\res\\anim\\abc_slide_out_top.xml"
     }
 ]

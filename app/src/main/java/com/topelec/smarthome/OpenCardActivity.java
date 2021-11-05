@@ -98,6 +98,7 @@ public class OpenCardActivity extends Activity {
             public void onClick(View v) {
                 if(cardNo.equals("")){
                     idView.setText("请将磁卡放置于刷卡器上");
+                    System.out.println("请将磁卡放置于刷卡器上");
                 }else{
                     id_list.add(cardNo);
                     idView.setText("注册成功");
@@ -127,7 +128,13 @@ public class OpenCardActivity extends Activity {
             public void onClick(View v) {
                 cardNo = "";
                 Intent returnInte = new Intent();
-                returnInte.putExtra("list",id_list);
+                System.out.println("开始返回");
+                String id_list_string = new String();
+                for(int i = 0; i < id_list.size(); i++){
+                    id_list_string += "+"+id_list.get(i);
+                }
+                System.out.println("结束返回");
+                returnInte.putExtra("list",id_list_string);
                 setResult(RESULT_OK, returnInte);
                 finish();
             }
