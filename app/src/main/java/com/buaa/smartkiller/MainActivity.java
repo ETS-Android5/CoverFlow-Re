@@ -298,28 +298,27 @@ public class MainActivity extends Activity implements
         }
     };
 
-//    //定义发送任务定时器
-//    Handler timerHandler = new Handler();
-//    Runnable sendRunnable = new Runnable() {
-//        int i = 1;
-//        @Override
-//        public void run() {
-//            //TODO:查询温度湿度
-//            switch (i) {
-//                case 1:
-////                    mSensorControl.checkBrightness(true);
-////                    i++;
-//                    break;
-////                case 2:
-////                    mSensorControl.checkPE(true);
-////                    i = 1;
-////                    break;
-//                default:
-//                    break;
-//            }
-//            timerHandler.postDelayed(this,Command.CHECK_SENSOR_DELAY);
-//        }
-//    };
+    //定义发送任务定时器
+    Handler timerHandler = new Handler();
+    Runnable sendRunnable = new Runnable() {
+        int i = 2;
+        @Override
+        public void run() {
+            //TODO:查询温度湿度
+            switch (i) {
+                case 1:
+//                    mSensorControl.checkBrightness(true);
+//                    i++;
+                    break;
+                case 2:
+                    mSensorControl.checkPE(true);
+                    break;
+                default:
+                    break;
+            }
+            timerHandler.postDelayed(this,Command.CHECK_SENSOR_DELAY);
+        }
+    };
 
     private static final boolean AUTO_HIDE = true;
     private static final int UI_ANIMATION_DELAY = 300;
@@ -539,7 +538,7 @@ public class MainActivity extends Activity implements
         mSensorControl.actionControl(true);
 
         //TODO:每350ms发送一次数据
-        //timerHandler.postDelayed(sendRunnable, Command.CHECK_SENSOR_DELAY);
+        timerHandler.postDelayed(sendRunnable, Command.CHECK_SENSOR_DELAY);
     }
     /**
      * 在完全不可见时调用
