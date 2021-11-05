@@ -10,8 +10,6 @@ import android.preference.PreferenceManager;
 
 import android.os.Bundle;
 
-import android.util.ArrayMap;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -46,7 +44,9 @@ public class MainActivity extends Activity implements
     private ImageView door1;
     private ImageView door2;
     private ImageView nozzle;
-    private ImageView doctor;
+    private ImageView doctor1;
+    private ImageView doctor2;
+    private ImageView doctor3;
     private ImageView rfidMachine;
 
     private ImageButton btnRecharge;
@@ -157,7 +157,10 @@ public class MainActivity extends Activity implements
     }
 
     public void openDoorTwo(){
+        doctor2.setVisibility(View.INVISIBLE);
+        doctor3.setVisibility(View.VISIBLE);
         door2.setImageDrawable(getResources().getDrawable(R.drawable.door_open));
+
         System.out.println("open door 2");
     }
 
@@ -167,6 +170,8 @@ public class MainActivity extends Activity implements
     }
 
     public void startShowering(){
+        doctor1.setVisibility(View.INVISIBLE);
+        doctor2.setVisibility(View.VISIBLE);
         nozzle.setImageDrawable(getResources().getDrawable(R.drawable.nozzle_open));
         mSensorControl.fanForward(true);
     }
@@ -287,6 +292,8 @@ public class MainActivity extends Activity implements
                     else if(pageWhere.equals("main")){
                     if(id_list.contains(data.getString("cardNo")) && state.equals("empty")) {
                         rfidMachine.setImageDrawable(getResources().getDrawable(R.drawable.access_accessed));
+                        doctor3.setVisibility(View.INVISIBLE);
+                        doctor1.setVisibility(View.VISIBLE);
                         System.out.println("smarthome on!");
                         System.out.println("cardNo"+data.getString("cardNo"));
                         onRFID(data);
@@ -391,9 +398,13 @@ public class MainActivity extends Activity implements
         door1 = (ImageView) findViewById(R.id.door1);
         door2 = (ImageView) findViewById(R.id.door2);
         nozzle =  (ImageView) findViewById(R.id.nozzle);
-        doctor = (ImageView) findViewById(R.id.doctor);
-        rfidMachine = (ImageView) findViewById(R.id.rfid_machine);
 
+        doctor1 = (ImageView) findViewById(R.id.doctor1);
+        doctor2 = (ImageView) findViewById(R.id.doctor2);
+        doctor3 = (ImageView) findViewById(R.id.doctor3);
+        doctor3.setVisibility(View.INVISIBLE);
+
+        rfidMachine = (ImageView) findViewById(R.id.rfid_machine);
         mContentView = findViewById(R.id.smartkiller_content);
         recharge_page = (FrameLayout) findViewById(R.id.recharge_page);
         idView = (TextView) findViewById(R.id.idView);
@@ -401,7 +412,7 @@ public class MainActivity extends Activity implements
         btnAuthor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cardNo.equals("")){
+                if("".equals(cardNo)){
                     idView.setText("请将磁卡放置于刷卡器上");
                 }else{
                     if(!id_list.contains(cardNo)) {

@@ -29,13 +29,33 @@
             android:src="@drawable/access_accessed" />
 
         <ImageView
-            android:id="@+id/doctor"
+            android:id="@+id/doctor1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="841dp"
             android:layout_marginTop="168dp"
             android:layout_marginBottom="28dp"
             android:src="@drawable/doctor" />
+
+        <ImageView
+            android:id="@+id/doctor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/doctor"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/doctor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/doctor"
+            tools:visibility="invisible" />
 
         <ImageButton
             android:id="@+id/switch_to_recharge"
