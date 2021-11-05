@@ -92,8 +92,9 @@ public class MainActivity extends Activity implements
         }
 
         state = "entering";
-
+        System.out.println("start open");
         openDoorOne();
+        System.out.println("open over");
     }
 
     public void stateTransferToEntered() {
@@ -143,20 +144,29 @@ public class MainActivity extends Activity implements
     }
 
     public void openDoorOne(){
-
-        throw new RuntimeException("Not Implemented");
+        System.out.println("open door 1");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    mSensorControl.fanForward(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
     }
 
     public void closeDoorOne(){
-        throw new RuntimeException("Not Implemented");
+        System.out.println("close door 1");
     }
 
     public void openDoorTwo(){
-        throw new RuntimeException("Not Implemented");
+        System.out.println("open door 2");
     }
 
     public void closeDoorTwo(){
-        throw new RuntimeException("Not Implemented");
+        System.out.println("close door 2");
     }
 
     public void startShowering(){
@@ -170,18 +180,19 @@ public class MainActivity extends Activity implements
     // 传感器信号接收器
 
     public void onRFID(Bundle data) {
-        if(id_list.contains(data.getString("cardNo"))){
-            if(state.equals("empty")) {
-                stateTransferToEntering();
-            }
-            else{
-                throw new IllegalStateException("IllegalStateTransfer");
-            }
-        }
-        else{
-            System.out.println("卡还妹开捏");
-
-        }
+        stateTransferToEntering();
+//        if(id_list.contains(data.getString("cardNo"))){
+//            if(state.equals("empty")) {
+//                stateTransferToEntering();
+//            }
+//            else{
+//                throw new IllegalStateException("IllegalStateTransfer");
+//            }
+//        }
+//        else{
+//            System.out.println("卡还妹开捏");
+//
+//        }
 
 
     }
@@ -211,6 +222,7 @@ public class MainActivity extends Activity implements
     public void sendOnGuangdianMessage() {
         Message msg = new Message();
         msg.what = 0x22;
+        System.out.println("perecived");
         myHandler.sendMessage(msg);
     }
 
@@ -243,13 +255,13 @@ public class MainActivity extends Activity implements
 
                     break;
                 case Command.HF_ID:      //防冲突（获取卡号）返回结果
-                    System.out.println("进来了hfid");
-                    System.out.println("cardNo"+data.getString("cardNo"));
+
                     data = msg.getData();
-                    for(int i = 0; i < id_list.size(); i++){
-                        System.out.println(id_list.get(i));
-                    }
-                    if(id_list.contains(data.getString("cardNo"))) {
+                    System.out.println(state);
+//                    for(int i = 0; i < id_list.size(); i++){
+//                        System.out.println(id_list.get(i));
+//                    }
+                    if(id_list.contains(data.getString("cardNo")) && state.equals("empty")) {
                         System.out.println("smarthome on!");
                         System.out.println("cardNo"+data.getString("cardNo"));
                         onRFID(data);
@@ -616,24 +628,14 @@ public class MainActivity extends Activity implements
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        if (requestCode == REQ_SYSTEM_SETTINGS) {
-
-            PreferenceManager.setDefaultValues(this,R.xml.settings_smarthome,false);
-            SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
-            isAutoTempHum = settings.getBoolean("auto_temp_switch",true);
-            isAutoBrightness = settings.getBoolean("auto_bright_switch",true);
-            settingTemperature = Integer.parseInt(settings.getString("temp_settings","27"));
-            settingHumidity = Integer.parseInt(settings.getString("hum_settings","40"));
-
-        }
-
-        else if(requestCode == REQ_RECAHRGE_INFO){
-
-        }
-        else if(requestCode == RESULT_OK){
-            System.out.println(getIntent().getStringExtra("list"));
-//            id_list = getIntent().getStringArrayListExtra("list");
+        if(requestCode == REQ_RECAHRGE_INFO && resultCode == RESULT_OK){
+//            System.out.println("Return Code: "+data.getExtras().getString("list"));
+            id_list = data.getStringArrayListExtra("list");
+            System.out.println("kaishi ");
+            for(int i = 0; i < id_list.size(); i++){
+                System.out.println(id_list.get(i));
+            }
+            System.out.println("jieshu");
         }
     }
 

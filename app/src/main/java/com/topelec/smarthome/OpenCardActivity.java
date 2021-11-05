@@ -66,7 +66,7 @@ public class OpenCardActivity extends Activity {
                     break;
                 case Command.HF_ID:      //防冲突（获取卡号）返回结果
 
-                    System.out.println(data.getString("cardNo"));
+//                    System.out.println(data.getString("cardNo"));
                     if(data.getString("cardNo")!=null) {
                         cardNo = data.getString("cardNo");
                     }
@@ -137,14 +137,15 @@ public class OpenCardActivity extends Activity {
             @Override
             public void onClick(View v) {
                 cardNo = "";
-                Intent returnInte = new Intent();
+                Intent returnInte = getIntent();
                 System.out.println("开始返回");
-                String id_list_string = new String("嘿嘿");
+//                String id_list_string = new String();
 //                for(int i = 0; i < id_list.size(); i++){
 //                    id_list_string += "+"+id_list.get(i);
 //                }
+//                System.out.println("ID_LIST:" + id_list_string);
                 System.out.println("结束返回");
-                returnInte.putExtra("list",id_list_string);
+                returnInte.putExtra("list",id_list);
                 setResult(RESULT_OK, returnInte);
                 finish();
             }
