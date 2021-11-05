@@ -1,7 +1,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.topelec.smarthome.MainActivity"
+    android:layout_height="match_parent" tools:context="com.buaa.smartkiller.MainActivity"
     android:background="@drawable/buscard_consume_background">
 
     <FrameLayout
@@ -159,14 +159,12 @@
         android:background="@drawable/buscard_consume_background">
 
         <ImageView
-            android:id="@+id/nozzle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="450dp"
             android:src="@drawable/nozzle_closed" />
 
         <ImageView
-            android:id="@+id/rfid_state_panel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="782dp"
@@ -175,7 +173,6 @@
             android:src="@drawable/access_waiting" />
 
         <ImageView
-            android:id="@+id/doctor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="168dp"
@@ -195,14 +192,12 @@
             android:src="@drawable/computer_button" />
 
         <ImageView
-            android:id="@+id/door1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="320dp"
             android:src="@drawable/door_closed" />
 
         <ImageView
-            android:id="@+id/door2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="680dp"

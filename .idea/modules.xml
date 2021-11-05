@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoverFlow-Re.iml" filepath="$PROJECT_DIR$/.idea/modules/CoverFlow-Re.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CoverFlow-Re.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CoverFlow-Re.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/CoverFlow-Re.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/CoverFlow-Re.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoverFlow-master.iml" filepath="$PROJECT_DIR$/.idea/modules/CoverFlow-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CoverFlow-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CoverFlow-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/CoverFlow-master.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/CoverFlow-master.lib.iml" />
     </modules>
   </component>
 </project>
