@@ -158,8 +158,6 @@ public class MainActivity extends Activity implements
     }
 
     public void openDoorTwo(){
-        doctor2.setVisibility(View.INVISIBLE);
-        doctor3.setVisibility(View.VISIBLE);
         door2.setImageDrawable(getResources().getDrawable(R.drawable.door_open));
 
         System.out.println("open door 2");
@@ -167,6 +165,8 @@ public class MainActivity extends Activity implements
 
     public void closeDoorTwo(){
         door2.setImageDrawable(getResources().getDrawable(R.drawable.door_closed));
+        doctor2.setVisibility(View.INVISIBLE);
+        doctor3.setVisibility(View.VISIBLE);
         System.out.println("close door 2");
     }
 
@@ -310,7 +310,7 @@ public class MainActivity extends Activity implements
                     break;
                 case 0x22:{
                     System.out.println("before:"+data.getByte("senser_status"));
-                    if(data.getByte("senser_status") == 0x01) {
+                    if(data.getByte("senser_status") == 0x00) {
                         onGuangDian();
                     }
                     else{
@@ -343,7 +343,9 @@ public class MainActivity extends Activity implements
 //                    i++;
                     break;
                 case 2:
+                    System.out.println("check pe before");
                     mSensorControl.checkPE(true);
+                    System.out.println("check pe after");
                     break;
                 default:
                     break;
